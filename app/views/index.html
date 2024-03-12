@@ -140,6 +140,7 @@ feedback will help us to improve it.' }) }}
                         data-track-category="content-history"
                         data-track-action="see-all-updates-link-clicked"
                         data-track-label="history"
+                        id="see-all-updates"
                       >
                         See all updates
                       </a>
@@ -800,13 +801,33 @@ feedback will help us to improve it.' }) }}
 </div>
 
 <script>
+  const fullHistory = document.getElementById("full-history");
   const showAllUpdates = document.getElementById("show-all-updates");
-  showAllUpdates.onclick = (event) => {
-    event.preventDefault();
-    const fullHistory = document.getElementById("full-history");
-    fullHistory.classList.contains("js-hidden")
+
+  const updateVisibility = (visible) => {
+    visible
       ? fullHistory.classList.remove("js-hidden")
       : fullHistory.classList.add("js-hidden");
+    showAllUpdates.textContent = visible
+      ? "- hide all updates"
+      : "+ show all updates";
+    showAllUpdates.ariaExpanded = visible;
+  };
+
+  const toggleVisibility = () => {
+    updateVisibility(fullHistory.classList.contains("js-hidden"));
+  };
+
+  const seeAllUpdates = document.getElementById("see-all-updates");
+  seeAllUpdates.onclick = () => {
+    event.preventDefault();
+    updateVisibility(true);
+    document.getElementById("full-publication-update-history").scrollIntoView();
+  };
+
+  showAllUpdates.onclick = (event) => {
+    event.preventDefault();
+    toggleVisibility();
   };
 </script>
 
