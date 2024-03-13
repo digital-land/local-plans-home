@@ -14,8 +14,13 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 <link rel="stylesheet" href="/public/css/styles.css" />
 
 <div class="govuk-width-container">
-  {{ govukPhaseBanner({ tag: { text: "Alpha" }, html: 'This is a new service –
-  your feedback will help us to improve it.' }) }}
+  <!-- prettier-ignore -->
+  {{ govukPhaseBanner({
+    tag: {
+      text: "Alpha"
+    },
+    html: 'This is a new site – your feedback will help us to improve it.'
+  }) }}
 </div>
 
 {% endblock %}
