@@ -1,20 +1,828 @@
-{% extends "layouts/main.html" %}
-
-{% set pageName="Home" %}
-
-{% block content %}
+{% extends "layouts/main.html" %} {% set pageName="Home" %} {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
+    <div
+      id="body"
+      class="gem-c-layout-for-public govuk-template__body js-enabled"
+    >
+      <div id="wrapper" class="direction-ltr govuk-width-container">
+        <div class="gem-c-contextual-breadcrumbs">
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="homeLinkClicked"
+                  data-track-action="homeBreadcrumb"
+                  data-track-label=""
+                  data-track-options="{}"
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="2"
+                  data-track-label="/housing-local-and-community"
+                  data-track-options='{"dimension28":"4","dimension29":"Housing, local and community"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"2","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community"
+                  >Housing, local and community</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="3"
+                  data-track-label="/housing-local-and-community/planning-and-building"
+                  data-track-options='{"dimension28":"4","dimension29":"Planning and building"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"3","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community/planning-and-building"
+                  >Planning and building</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="4"
+                  data-track-label="/housing-local-and-community/planning-system"
+                  data-track-options='{"dimension28":"4","dimension29":"Planning system"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community/planning-system"
+                  >Planning system</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+        <main role="main" id="content" class="document-collection" lang="en">
+          <span id="Top"></span>
 
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div
+                class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8"
+              >
+                <span class="govuk-caption-xl gem-c-title__context">
+                  Collection
+                </span>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+                <h1 class="gem-c-title__text govuk-heading-l">
+                  Create or update a local plan
+                </h1>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-two-thirds">
+              <p class="gem-c-lead-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                suscipit, enim nec lacinia laoreet, felis enim efficitur mauris,
+                vitae commodo libero est id urna. Integer a risus justo.
+              </p>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="metadata-logo-wrapper">
+              <div class="govuk-grid-column-two-thirds metadata-column">
+                <div
+                  class="gem-c-metadata"
+                  data-module="gem-toggle metadata"
+                  data-gem-toggle-module-started="true"
+                  data-metadata-module-started="true"
+                >
+                  <dl
+                    class="gem-c-metadata__list"
+                    data-module="gem-track-click"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <dt class="gem-c-metadata__term">From:</dt>
+                    <dd class="gem-c-metadata__definition">
+                      <a
+                        class="govuk-link"
+                        href="/government/organisations/department-for-levelling-up-housing-and-communities"
+                        >Department for Levelling Up, Housing and Communities
+                      </a>
+                      and
+                      <a
+                        class="govuk-link"
+                        href="/government/organisations/ministry-of-housing-communities-and-local-government"
+                        >Ministry of Housing, Communities &amp; Local
+                        Government</a
+                      >
+                    </dd>
+                    <dt class="gem-c-metadata__term">Published</dt>
+                    <dd class="gem-c-metadata__definition">23 August 2013</dd>
+                    <dt class="gem-c-metadata__term">Last updated</dt>
+                    <dd class="gem-c-metadata__definition">
+                      18 October 2018 —
+                      <a
+                        href="#full-publication-update-history"
+                        class="gem-c-metadata__definition-link govuk-!-display-none-print js-see-all-updates-link"
+                        data-track-category="content-history"
+                        data-track-action="see-all-updates-link-clicked"
+                        data-track-label="history"
+                        id="see-all-updates"
+                      >
+                        See all updates
+                      </a>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-third"></div>
+            </div>
+          </div>
+
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="govuk-!-display-none-print govuk-!-margin-bottom-6"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+            <form
+              class="gem-c-single-page-notification-button"
+              action="/email-signup"
+              method="POST"
+              data-track-label="/government/collections/create-or-update-a-local-plan"
+              data-track-action="Subscribe-button-top"
+              data-track-category="Single-page-notification-button"
+              data-button-location="top"
+              data-button-text-subscribe="Get emails about this page"
+              data-button-text-unsubscribe="Stop getting emails about this page"
+            >
+              <input
+                type="hidden"
+                name="base_path"
+                value="/government/collections/create-or-update-a-local-plan"
+              />
+              <input
+                type="hidden"
+                name="single_page_subscription"
+                value="true"
+              />
+              <input
+                type="hidden"
+                name="link"
+                value="/government/collections/create-or-update-a-local-plan"
+              />
+              <button
+                class="govuk-body-s gem-c-single-page-notification-button__submit"
+                type="submit"
+                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"/email-signup"}'
+              >
+                <svg
+                  class="gem-c-single-page-notification-button__icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  width="18"
+                  viewBox="0 0 459.334 459.334"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"
+                  ></path></svg
+                ><span class="gem-c-single-page-notication-button__text"
+                  >Get emails about this page</span
+                >
+              </button>
+            </form>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div
+                id="contents"
+                class="app-c-contents-list-with-body"
+                data-module="sticky-element-container"
+                data-sticky-element-container-module-started="true"
+              >
+                <div class="govspeak">
+                  <p>
+                    Sed faucibus, purus a condimentum tincidunt,
+                    <a
+                      href="/guidance/augue-nulla-sollicitudin-mauris"
+                      class="govuk-link"
+                      >augue nulla sollicitudin mauris</a
+                    >, et aliquet purus lacus id nibh. Duis malesuada
+                    pellentesque tellus, eu consectetur erat vulputate a.
+                    Vivamus viverra sapien at massa luctus pellentesque.
+                    Suspendisse elementum sed ex et ornare. Mauris tincidunt
+                    fringilla turpis eget feugiat. Aenean rutrum orci ac
+                    tincidunt placerat. Nunc condimentum mattis leo, fermentum
+                    ultrices augue bibendum in.
+                  </p>
+
+                  <p>
+                    Morbi tempus odio nunc
+                    <a
+                      href="/government/publications/odio-nunc"
+                      class="govuk-link"
+                      >odio nunc</a
+                    >.
+                  </p>
+                </div>
+                <div class="responsive-bottom-margin">
+                  <nav
+                    data-module="gem-track-click ga4-link-tracker"
+                    aria-label="Contents"
+                    class="gem-c-contents-list"
+                    role="navigation"
+                    data-gem-track-click-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <h2 class="gem-c-contents-list__title">Contents</h2>
+                    <ol class="gem-c-contents-list__list">
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 1"
+                          data-track-label="#ut quis tortor"
+                          data-track-options='{"dimension29":"Ut quis tortor"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":6,"index_link":1}'
+                          href="#ut quis tortor"
+                          >Ut quis tortor</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 2"
+                          data-track-label="#etiam-quis-pharetra-turpis"
+                          data-track-options='{"dimension29":"Etiam quis pharetra turpis"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":6,"index_link":2}'
+                          href="#etiam-quis-pharetra-turpis"
+                          >Etiam quis pharetra turpis</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 3"
+                          data-track-label="#pellentesque"
+                          data-track-options='{"dimension29":"Pellentesque"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":6,"index_link":3}'
+                          href="#pellentesque"
+                          >Pellentesque</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+
+                <div class="responsive-bottom-margin">
+                  <div class="govuk-!-margin-bottom-8">
+                    <div
+                      class="gem-c-govspeak govuk-govspeak direction-ltr"
+                      data-module="govspeak"
+                      data-govspeak-module-started="true"
+                    >
+                      <div class="govspeak"></div>
+                    </div>
+                  </div>
+
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="ut-quis-tortor"
+                  >
+                    Ut quis tortor
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak"
+                    data-govspeak-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        Duis in sem placerat, faucibus turpis pharetra, aliquam
+                        augue. Vivamus ornare hendrerit ante ut molestie. Donec
+                        pulvinar suscipit ipsum, id dignissim nunc dictum eget.
+                      </p>
+
+                      <p>
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.1"
+                            data-track-label="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
+                            data-track-options='{"dimension28":"3","dimension29":"Integer lobortis ante auctor vehicula quam malesuada convallis"}'
+                            class="govuk-link"
+                            href="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
+                            >Integer lobortis ante auctor vehicula quam
+                            malesuada convallis</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2010-03-30T01:00:00+01:00">
+                              30 March 2010
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.2"
+                            data-track-label="/guidance/phasellus-bibendum-malesuada-sodales"
+                            data-track-options='{"dimension28":"3","dimension29":"Phasellus bibendum malesuada sodales"}'
+                            class="govuk-link"
+                            href="/guidance/phasellus-bibendum-malesuada-sodales"
+                            >Phasellus bibendum malesuada sodales</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2013-08-23T01:00:00+01:00">
+                              23 August 2013
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.3"
+                            data-track-label="/government/publications/donec-quis-urna-mollis-lacinia-nunc-sit-amet"
+                            data-track-options='{"dimension28":"3","dimension29":"Donec quis urna mollis lacinia nunc sit amet"}'
+                            class="govuk-link"
+                            href="/government/publications/donec-quis-urna-mollis-lacinia-nunc-sit-amet"
+                            >Donec quis urna mollis lacinia nunc sit amet</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2013-08-23T09:05:00+01:00">
+                              23 August 2013
+                            </time>
+                          </li>
+                          <li class="gem-c-document-list__attribute">
+                            Guidance
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="etiam-quis-pharetra-turpis"
+                  >
+                    Etiam quis pharetra turpis
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak"
+                    data-govspeak-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        Integer tellus turpis, dictum sit amet lacus in,
+                        vestibulum eleifend erat mauris vel lacus eu risus
+                        sodales feugiat eu at elit.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="2.1"
+                            data-track-label="/government/publications/nam-viverra-maximus-erat-eget-blandit-interdum-malesuada"
+                            data-track-options='{"dimension28":"2","dimension29":"Nam viverra maximus erat eget blandit interdum malesuada"}'
+                            class="govuk-link"
+                            href="/government/publications/nam-viverra-maximus-erat-eget-blandit-interdum-malesuada"
+                            >Nam viverra maximus erat eget blandit interdum
+                            malesuada</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2014-11-24T15:00:02+00:00">
+                              24 November 2014
+                            </time>
+                          </li>
+                          <li class="gem-c-document-list__attribute">
+                            Guidance
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="2.2"
+                            data-track-label="/government/publications/mauris-suscipit-non-lacus-sagittis-tempus-egestas"
+                            data-track-options='{"dimension28":"2","dimension29":"Mauris suscipit non lacus sagittis tempus egestas"}'
+                            class="govuk-link"
+                            href="/government/publications/mauris-suscipit-non-lacus-sagittis-tempus-egestas"
+                            >Mauris suscipit non lacus sagittis tempus
+                            egestas</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2013-08-23T09:04:00+01:00">
+                              23 August 2013
+                            </time>
+                          </li>
+                          <li class="gem-c-document-list__attribute">
+                            Guidance
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="pellentesque"
+                  >
+                    Pellentesque
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak"
+                    data-govspeak-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        Curabitur condimentum libero arcu, ut mollis mi
+                        tincidunt quis. In tincidunt egestas ipsum et sagittis.
+                        Sed ac porta leo, scelerisque efficitur sapien.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="3.1"
+                            data-track-label="/government/publications/class-aptent-taciti-sociosqu-ad"
+                            data-track-options='{"dimension28":"1","dimension29":"Class aptent taciti sociosqu ad"}'
+                            class="govuk-link"
+                            href="/government/publications/class-aptent-taciti-sociosqu-ad"
+                            >Class aptent taciti sociosqu ad</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2014-11-24T15:00:03+00:00">
+                              24 November 2014
+                            </time>
+                          </li>
+                          <li class="gem-c-document-list__attribute">
+                            Guidance
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="responsive-bottom-margin">
+                  <div
+                    class="app-c-published-dates app-c-published-dates--history"
+                    id="full-publication-update-history"
+                    data-module="gem-toggle"
+                    lang="en"
+                    data-gem-toggle-module-started="true"
+                  >
+                    Published 23 August 2013
+                    <br />Last updated 18 October 2018
+                    <a
+                      href="#full-history"
+                      class="app-c-published-dates__toggle govuk-link"
+                      data-controls="full-history"
+                      data-expanded="false"
+                      data-toggled-text="-&nbsp;hide all updates"
+                      data-module="ga4-event-tracker"
+                      data-ga4-event='{"event_name":"select_content","type":"content history","section":"Footer"}'
+                      data-ga4-expandable=""
+                      role="button"
+                      aria-controls="full-history"
+                      aria-expanded="false"
+                      data-ga4-event-tracker-module-started="true"
+                      id="show-all-updates"
+                      >+&nbsp;show all updates</a
+                    >
+                    <div
+                      class="app-c-published-dates__change-history js-hidden"
+                      id="full-history"
+                      aria-live="polite"
+                      role="region"
+                    >
+                      <ol class="app-c-published-dates__list">
+                        <li class="app-c-published-dates__change-item">
+                          <time
+                            class="app-c-published-dates__change-date timestamp"
+                            datetime="2018-10-18T09:15:59.000+01:00"
+                            >18 October 2018</time
+                          >
+                          <p class="app-c-published-dates__change-note">
+                            Fusce eget porttitor leo eu consequat tellus.
+                          </p>
+                        </li>
+                        <li class="app-c-published-dates__change-item">
+                          <time
+                            class="app-c-published-dates__change-date timestamp"
+                            datetime="2013-08-23T09:10:00.000+01:00"
+                            >23 August 2013</time
+                          >
+                          <p class="app-c-published-dates__change-note">
+                            First published.
+                          </p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  data-sticky-element=""
+                  class="app-c-contents-list-with-body__link-wrapper sticky-element--hidden sticky-element--stuck-to-window sticky-element--enabled"
+                >
+                  <div class="app-c-contents-list-with-body__link-container">
+                    <a
+                      class="govuk-link app-c-back-to-top dont-print"
+                      href="#contents"
+                    >
+                      <svg
+                        class="app-c-back-to-top__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="17"
+                        viewBox="0 0 13 17"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"
+                        ></path>
+                      </svg>
+                      Contents
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <div class="gem-c-contextual-sidebar">
+                <div
+                  class="gem-c-related-navigation"
+                  data-module="gem-track-click ga4-link-tracker"
+                  data-gem-track-click-module-started="true"
+                  data-ga4-link-tracker-module-started="true"
+                >
+                  <h2
+                    id="related-nav-related_items-f9321359"
+                    class="gem-c-related-navigation__main-heading"
+                    data-track-count="sidebarRelatedItemSection"
+                  >
+                    Related content
+                  </h2>
+
+                  <nav
+                    role="navigation"
+                    class="gem-c-related-navigation__nav-section"
+                    aria-labelledby="related-nav-related_items-f9321359"
+                    data-module="gem-toggle"
+                    data-gem-toggle-module-started="true"
+                  >
+                    <ul class="gem-c-related-navigation__link-list">
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.1 Related content"
+                          data-track-label="/guidance/morbi-nec-tellus-nec-tellus-rhoncus-ultricies-et-vel-sem"
+                          data-track-options='{"dimension28":"4","dimension29":"Morbi nec tellus nec tellus rhoncus ultricies et vel sem"}'
+                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"1","index_section_count":"1","index_total":"4","section":"Related content"}'
+                          href="/guidance/morbi-nec-tellus-nec-tellus-rhoncus-ultricies-et-vel-sem"
+                          >Morbi nec tellus nec tellus rhoncus ultricies et vel
+                          sem</a
+                        >
+                      </li>
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.2 Related content"
+                          data-track-label="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
+                          data-track-options='{"dimension28":"4","dimension29":"Integer lobortis ante auctor vehicula quam malesuada convallis"}'
+                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"2","index_section_count":"1","index_total":"4","section":"Related content"}'
+                          href="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
+                          >Integer lobortis ante auctor vehicula quam malesuada
+                          convallis</a
+                        >
+                      </li>
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.3 Related content"
+                          data-track-label="/government/publications/sed-rutrum-sagittis-dolor-in-venenatis"
+                          data-track-options='{"dimension28":"4","dimension29":"Sed rutrum sagittis dolor in venenatis"}'
+                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"3","index_section_count":"1","index_total":"4","section":"Related content"}'
+                          href="/government/publications/sed-rutrum-sagittis-dolor-in-venenatis"
+                          >Sed rutrum sagittis dolor in venenatis</a
+                        >
+                      </li>
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.4 Related content"
+                          data-track-label="/guidance/ut-facilisis-ac-nulla-at-hendrerit"
+                          data-track-options='{"dimension28":"4","dimension29":"Ut facilisis ac nulla at hendrerit"}'
+                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"4","index_section_count":"1","index_total":"4","section":"Related content"}'
+                          href="/guidance/ut-facilisis-ac-nulla-at-hendrerit"
+                          >Ut facilisis ac nulla at hendrerit</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="gem-c-contextual-footer">
+                <div
+                  class="gem-c-related-navigation"
+                  data-module="gem-track-click ga4-link-tracker"
+                  data-gem-track-click-module-started="true"
+                  data-ga4-link-tracker-module-started="true"
+                >
+                  <nav
+                    role="navigation"
+                    class="gem-c-related-navigation__nav-section"
+                    aria-labelledby="related-nav-topics-11b0107d"
+                    data-module="gem-toggle"
+                    data-gem-toggle-module-started="true"
+                  >
+                    <h2
+                      id="related-nav-topics-11b0107d"
+                      class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer"
+                      data-track-count="footerRelatedItemSection"
+                    >
+                      Explore the topic
+                    </h2>
+
+                    <ul class="gem-c-related-navigation__link-list">
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.1 Explore the topic"
+                          data-track-label="/explore/sed-tempus-quam"
+                          data-track-options='{"dimension28":"3","dimension29":"Sed tempus quam"}'
+                          data-ga4-link='{"event_name":"navigation","type":"contextual footer","index_section":"1","index_link":"1","index_section_count":"1","index_total":"3","section":"Explore the topic"}'
+                          href="/explore/sed-tempus-quam"
+                          >Sed tempus quam</a
+                        >
+                      </li>
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.2 Explore the topic"
+                          data-track-label="/explore/risus-pellentesque-rhoncus-venenatis"
+                          data-track-options='{"dimension28":"3","dimension29":"Risus pellentesque rhoncus venenatis"}'
+                          data-ga4-link='{"event_name":"navigation","type":"contextual footer","index_section":"1","index_link":"2","index_section_count":"1","index_total":"3","section":"Explore the topic"}'
+                          href="/explore/risus-pellentesque-rhoncus-venenatis"
+                          >Risus pellentesque rhoncus venenatis</a
+                        >
+                      </li>
+                      <li class="gem-c-related-navigation__link">
+                        <a
+                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer"
+                          data-track-category="relatedLinkClicked"
+                          data-track-action="1.3 Explore the topic"
+                          data-track-label="/explore/ipsum-blandit-at-laoreet-ante-molestie"
+                          data-track-options='{"dimension28":"3","dimension29":"Ipsum blandit, at laoreet ante molestie"}'
+                          data-ga4-link='{"event_name":"navigation","type":"contextual footer","index_section":"1","index_link":"3","index_section_count":"1","index_total":"3","section":"Explore the topic"}'
+                          href="/explore/ipsum-blandit-at-laoreet-ante-molestie"
+                          >Ipsum blandit, at laoreet ante molestie</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
   </div>
 </div>
+
+<script>
+  const fullHistory = document.getElementById("full-history");
+  const showAllUpdates = document.getElementById("show-all-updates");
+
+  const updateVisibility = (visible) => {
+    visible
+      ? fullHistory.classList.remove("js-hidden")
+      : fullHistory.classList.add("js-hidden");
+    showAllUpdates.textContent = visible
+      ? "- hide all updates"
+      : "+ show all updates";
+    showAllUpdates.ariaExpanded = visible;
+  };
+
+  const toggleVisibility = () => {
+    updateVisibility(fullHistory.classList.contains("js-hidden"));
+  };
+
+  const seeAllUpdates = document.getElementById("see-all-updates");
+  seeAllUpdates.onclick = () => {
+    event.preventDefault();
+    updateVisibility(true);
+    document.getElementById("full-publication-update-history").scrollIntoView();
+  };
+
+  showAllUpdates.onclick = (event) => {
+    event.preventDefault();
+    toggleVisibility();
+  };
+</script>
 
 {% endblock %}
