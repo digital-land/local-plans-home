@@ -12312,26 +12312,6 @@
   display: inline-block;
 }
 
-.govuk-footer__copyright-logo {
-  display: inline-block;
-  min-width: 125px;
-  padding-top: 112px;
-  background-image: url(/assets/static/govuk-crest-87038e62e594b5f83ea40e0fb480fe7a5f41ba0db3917f709dfb39043f19a0f7.png);
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-size: 125px 102px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .govuk-footer__copyright-logo {
-    background-image: url(/assets/static/govuk-crest-2x-f88404651d3e759ad54ebb8fa59ce10dafa0f8788571c8a9adc7597dd9823220.png);
-  }
-}
-
 .govuk-footer__inline-list {
   margin-top: 0;
   margin-bottom: 15px;
