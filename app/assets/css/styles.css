@@ -16148,7 +16148,7 @@
 }
 
 .draft main {
-  background-image: url(/assets/static/draft-watermark-2fc7e51bfdd3eece36faad082cbb53e2527f6147a116b0385fb331f2d0eab56d.png);
+  background-image: url(/public/images/draft-watermark.png);
   background-repeat: repeat-y;
   background-position: 50% 0;
   background-size: contain;

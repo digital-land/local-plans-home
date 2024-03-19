@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %} {% set pageName="Home" %} {% block content %}
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row draft">
   <div class="govuk-grid-column-full">
     <div
       id="body"
@@ -21,46 +21,10 @@
                   data-track-action="homeBreadcrumb"
                   data-track-label=""
                   data-track-options="{}"
-                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"4"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"1"}'
                   class="govuk-breadcrumbs__link"
                   href="/"
                   >Home</a
-                >
-              </li>
-              <li class="govuk-breadcrumbs__list-item">
-                <a
-                  data-track-category="breadcrumbClicked"
-                  data-track-action="2"
-                  data-track-label="/housing-local-and-community"
-                  data-track-options='{"dimension28":"4","dimension29":"Housing, local and community"}'
-                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"2","index_total":"4"}'
-                  class="govuk-breadcrumbs__link"
-                  href="/housing-local-and-community"
-                  >Housing, local and community</a
-                >
-              </li>
-              <li class="govuk-breadcrumbs__list-item">
-                <a
-                  data-track-category="breadcrumbClicked"
-                  data-track-action="3"
-                  data-track-label="/housing-local-and-community/planning-and-building"
-                  data-track-options='{"dimension28":"4","dimension29":"Planning and building"}'
-                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"3","index_total":"4"}'
-                  class="govuk-breadcrumbs__link"
-                  href="/housing-local-and-community/planning-and-building"
-                  >Planning and building</a
-                >
-              </li>
-              <li class="govuk-breadcrumbs__list-item">
-                <a
-                  data-track-category="breadcrumbClicked"
-                  data-track-action="4"
-                  data-track-label="/housing-local-and-community/planning-system"
-                  data-track-options='{"dimension28":"4","dimension29":"Planning system"}'
-                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
-                  class="govuk-breadcrumbs__link"
-                  href="/housing-local-and-community/planning-system"
-                  >Planning system</a
                 >
               </li>
             </ol>
@@ -87,9 +51,8 @@
 
             <div class="govuk-grid-column-two-thirds">
               <p class="gem-c-lead-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                suscipit, enim nec lacinia laoreet, felis enim efficitur mauris,
-                vitae commodo libero est id urna. Integer a risus justo.
+                Information, guidance and resources to help local planning
+                authorities create, update and publish a local plan.
               </p>
             </div>
           </div>
@@ -115,30 +78,11 @@
                         href="/government/organisations/department-for-levelling-up-housing-and-communities"
                         >Department for Levelling Up, Housing and Communities
                       </a>
-                      and
-                      <a
-                        class="govuk-link"
-                        href="/government/organisations/ministry-of-housing-communities-and-local-government"
-                        >Ministry of Housing, Communities &amp; Local
-                        Government</a
-                      >
                     </dd>
                     <dt class="gem-c-metadata__term">Published</dt>
-                    <dd class="gem-c-metadata__definition">23 August 2013</dd>
+                    <dd class="gem-c-metadata__definition">18 December 2023</dd>
                     <dt class="gem-c-metadata__term">Last updated</dt>
-                    <dd class="gem-c-metadata__definition">
-                      18 October 2018 —
-                      <a
-                        href="#full-publication-update-history"
-                        class="gem-c-metadata__definition-link govuk-!-display-none-print js-see-all-updates-link"
-                        data-track-category="content-history"
-                        data-track-action="see-all-updates-link-clicked"
-                        data-track-label="history"
-                        id="see-all-updates"
-                      >
-                        See all updates
-                      </a>
-                    </dd>
+                    <dd class="gem-c-metadata__definition">20 December 2024</dd>
                   </dl>
                 </div>
               </div>
@@ -194,10 +138,11 @@
                   <path
                     fill="currentColor"
                     d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"
-                  ></path></svg
-                ><span class="gem-c-single-page-notication-button__text"
-                  >Get emails about this page</span
-                >
+                  ></path>
+                </svg>
+                <span class="gem-c-single-page-notication-button__text"
+                  >Get emails about this page
+                </span>
               </button>
             </form>
           </div>
@@ -210,31 +155,6 @@
                 data-module="sticky-element-container"
                 data-sticky-element-container-module-started="true"
               >
-                <div class="govspeak">
-                  <p>
-                    Sed faucibus, purus a condimentum tincidunt,
-                    <a
-                      href="/guidance/augue-nulla-sollicitudin-mauris"
-                      class="govuk-link"
-                      >augue nulla sollicitudin mauris</a
-                    >, et aliquet purus lacus id nibh. Duis malesuada
-                    pellentesque tellus, eu consectetur erat vulputate a.
-                    Vivamus viverra sapien at massa luctus pellentesque.
-                    Suspendisse elementum sed ex et ornare. Mauris tincidunt
-                    fringilla turpis eget feugiat. Aenean rutrum orci ac
-                    tincidunt placerat. Nunc condimentum mattis leo, fermentum
-                    ultrices augue bibendum in.
-                  </p>
-
-                  <p>
-                    Morbi tempus odio nunc
-                    <a
-                      href="/government/publications/odio-nunc"
-                      class="govuk-link"
-                      >odio nunc</a
-                    >.
-                  </p>
-                </div>
                 <div class="responsive-bottom-margin">
                   <nav
                     data-module="gem-track-click ga4-link-tracker"
@@ -249,43 +169,136 @@
                       <li
                         class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
                       >
+                        <span aria-hidden="true"></span>
                         <a
                           class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
                           data-track-category="contentsClicked"
                           data-track-action="content_item 1"
-                          data-track-label="#ut quis tortor"
-                          data-track-options='{"dimension29":"Ut quis tortor"}'
-                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":6,"index_link":1}'
-                          href="#ut quis tortor"
-                          >Ut quis tortor</a
+                          data-track-label="#about-local-plans"
+                          data-track-options='{"dimension29":"About local plans"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":1}'
+                          href="#about-local-plans"
+                          >About local plans</a
                         >
                       </li>
                       <li
                         class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
                       >
+                        <span aria-hidden="true"></span>
                         <a
                           class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
                           data-track-category="contentsClicked"
                           data-track-action="content_item 2"
-                          data-track-label="#etiam-quis-pharetra-turpis"
-                          data-track-options='{"dimension29":"Etiam quis pharetra turpis"}'
-                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":6,"index_link":2}'
-                          href="#etiam-quis-pharetra-turpis"
-                          >Etiam quis pharetra turpis</a
+                          data-track-label="#policy-updates"
+                          data-track-options='{"dimension29":"Policy updates"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":2}'
+                          href="#policy-updates"
+                          >Policy updates</a
                         >
                       </li>
                       <li
                         class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
                       >
+                        <span aria-hidden="true"></span>
                         <a
                           class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
                           data-track-category="contentsClicked"
                           data-track-action="content_item 3"
-                          data-track-label="#pellentesque"
-                          data-track-options='{"dimension29":"Pellentesque"}'
-                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":6,"index_link":3}'
-                          href="#pellentesque"
-                          >Pellentesque</a
+                          data-track-label="#starting-a-local-plan"
+                          data-track-options='{"dimension29":"Starting a local plan"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":3}'
+                          href="#starting-a-local-plan"
+                          >Starting a local plan</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 4"
+                          data-track-label="#creating-a-vision-and-strategy"
+                          data-track-options='{"dimension29":"Creating a vision and strategy"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":4}'
+                          href="#creating-a-vision-and-strategy"
+                          >Creating a vision and strategy</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 5"
+                          data-track-label="#selecting-sites"
+                          data-track-options='{"dimension29":"Selecting sites"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":5}'
+                          href="#selecting-sites"
+                          >Selecting sites</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 6"
+                          data-track-label="#drafting-and-publishing-a-local-plan"
+                          data-track-options='{"dimension29":"Drafting and publishing a local plan"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":6}'
+                          href="#drafting-and-publishing-a-local-plan"
+                          >Drafting and publishing a local plan</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 7"
+                          data-track-label="#engaging-stakeholders"
+                          data-track-options='{"dimension29":"Engaging stakeholders"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":7}'
+                          href="#engaging-stakeholders"
+                          >Engaging stakeholders</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 8"
+                          data-track-label="#validating-your-plan"
+                          data-track-options='{"dimension29":"Validating your plan"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":8}'
+                          href="#validating-your-plan"
+                          >Validating your plan</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 9"
+                          data-track-label="#tools-and-resources"
+                          data-track-options='{"dimension29":"Tools and resources"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":9,"index_link":9}'
+                          href="#tools-and-resources"
+                          >Tools and resources</a
                         >
                       </li>
                     </ol>
@@ -296,8 +309,12 @@
                   <div class="govuk-!-margin-bottom-8">
                     <div
                       class="gem-c-govspeak govuk-govspeak direction-ltr"
-                      data-module="govspeak"
+                      data-module="govspeak ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                      data-ga4-link='{"event_name":"navigation","type":"callout"}'
                       data-govspeak-module-started="true"
+                      data-ga4-link-tracker-module-started="true"
                     >
                       <div class="govspeak"></div>
                     </div>
@@ -305,26 +322,25 @@
 
                   <h3
                     class="govuk-heading-m govuk-!-font-size-27"
-                    id="ut-quis-tortor"
+                    id="about-local-plans"
                   >
-                    Ut quis tortor
+                    About local plans
                   </h3>
 
                   <div
                     class="gem-c-govspeak govuk-govspeak direction-ltr"
-                    data-module="govspeak"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
                     data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
                   >
                     <div class="govspeak">
                       <p>
-                        Duis in sem placerat, faucibus turpis pharetra, aliquam
-                        augue. Vivamus ornare hendrerit ante ut molestie. Donec
-                        pulvinar suscipit ipsum, id dignissim nunc dictum eget.
-                      </p>
-
-                      <p>
-                        Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas.
+                        Background information on the plan-making process,
+                        including the policy in detail and who is involved with
+                        creating local plans.
                       </p>
                     </div>
                   </div>
@@ -345,19 +361,17 @@
                           <a
                             data-track-category="navDocumentCollectionLinkClicked"
                             data-track-action="1.1"
-                            data-track-label="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
-                            data-track-options='{"dimension28":"3","dimension29":"Integer lobortis ante auctor vehicula quam malesuada convallis"}'
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
                             class="govuk-link"
-                            href="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
-                            >Integer lobortis ante auctor vehicula quam
-                            malesuada convallis</a
+                            href=""
+                            >What is a local plan?</a
                           >
                         </div>
 
                         <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            <time datetime="2010-03-30T01:00:00+01:00">
-                              30 March 2010
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
                             </time>
                           </li>
                         </ul>
@@ -367,18 +381,17 @@
                           <a
                             data-track-category="navDocumentCollectionLinkClicked"
                             data-track-action="1.2"
-                            data-track-label="/guidance/phasellus-bibendum-malesuada-sodales"
-                            data-track-options='{"dimension28":"3","dimension29":"Phasellus bibendum malesuada sodales"}'
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
                             class="govuk-link"
-                            href="/guidance/phasellus-bibendum-malesuada-sodales"
-                            >Phasellus bibendum malesuada sodales</a
+                            href="#"
+                            >Who the local plan policy applies to</a
                           >
                         </div>
 
                         <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            <time datetime="2013-08-23T01:00:00+01:00">
-                              23 August 2013
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
                             </time>
                           </li>
                         </ul>
@@ -388,22 +401,99 @@
                           <a
                             data-track-category="navDocumentCollectionLinkClicked"
                             data-track-action="1.3"
-                            data-track-label="/government/publications/donec-quis-urna-mollis-lacinia-nunc-sit-amet"
-                            data-track-options='{"dimension28":"3","dimension29":"Donec quis urna mollis lacinia nunc sit amet"}'
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
                             class="govuk-link"
-                            href="/government/publications/donec-quis-urna-mollis-lacinia-nunc-sit-amet"
-                            >Donec quis urna mollis lacinia nunc sit amet</a
+                            href="#"
+                            >What the Planning Inspectorate needs from local
+                            authorities</a
                           >
                         </div>
 
                         <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            <time datetime="2013-08-23T09:05:00+01:00">
-                              23 August 2013
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
                             </time>
                           </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.4"
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >30-month process explained</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            Guidance
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.5"
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >How local plan-making policy has changed</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.6"
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >What is the new local plan-making process?</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="1.7"
+                            data-track-options='{"dimension28":"7","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Search</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
                           </li>
                         </ul>
                       </li>
@@ -411,21 +501,25 @@
                   </div>
                   <h3
                     class="govuk-heading-m govuk-!-font-size-27"
-                    id="etiam-quis-pharetra-turpis"
+                    id="policy-updates"
                   >
-                    Etiam quis pharetra turpis
+                    Policy updates
                   </h3>
 
                   <div
                     class="gem-c-govspeak govuk-govspeak direction-ltr"
-                    data-module="govspeak"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
                     data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
                   >
                     <div class="govspeak">
                       <p>
-                        Integer tellus turpis, dictum sit amet lacus in,
-                        vestibulum eleifend erat mauris vel lacus eu risus
-                        sodales feugiat eu at elit.
+                        Notifications when policy affecting local plans is
+                        launched or updated, including links to resources to
+                        learn more.
                       </p>
                     </div>
                   </div>
@@ -446,48 +540,19 @@
                           <a
                             data-track-category="navDocumentCollectionLinkClicked"
                             data-track-action="2.1"
-                            data-track-label="/government/publications/nam-viverra-maximus-erat-eget-blandit-interdum-malesuada"
-                            data-track-options='{"dimension28":"2","dimension29":"Nam viverra maximus erat eget blandit interdum malesuada"}'
+                            data-track-options='{"dimension28":"1","dimension29":"Search"}'
                             class="govuk-link"
-                            href="/government/publications/nam-viverra-maximus-erat-eget-blandit-interdum-malesuada"
-                            >Nam viverra maximus erat eget blandit interdum
-                            malesuada</a
+                            href="#"
+                            >30-month process to launch for creating local
+                            plans</a
                           >
                         </div>
 
                         <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            <time datetime="2014-11-24T15:00:02+00:00">
-                              24 November 2014
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
                             </time>
-                          </li>
-                          <li class="gem-c-document-list__attribute">
-                            Guidance
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="gem-c-document-list__item">
-                        <div class="gem-c-document-list__item-title">
-                          <a
-                            data-track-category="navDocumentCollectionLinkClicked"
-                            data-track-action="2.2"
-                            data-track-label="/government/publications/mauris-suscipit-non-lacus-sagittis-tempus-egestas"
-                            data-track-options='{"dimension28":"2","dimension29":"Mauris suscipit non lacus sagittis tempus egestas"}'
-                            class="govuk-link"
-                            href="/government/publications/mauris-suscipit-non-lacus-sagittis-tempus-egestas"
-                            >Mauris suscipit non lacus sagittis tempus
-                            egestas</a
-                          >
-                        </div>
-
-                        <ul class="gem-c-document-list__item-metadata">
-                          <li class="gem-c-document-list__attribute">
-                            <time datetime="2013-08-23T09:04:00+01:00">
-                              23 August 2013
-                            </time>
-                          </li>
-                          <li class="gem-c-document-list__attribute">
-                            Guidance
                           </li>
                         </ul>
                       </li>
@@ -495,21 +560,24 @@
                   </div>
                   <h3
                     class="govuk-heading-m govuk-!-font-size-27"
-                    id="pellentesque"
+                    id="starting-a-local-plan"
                   >
-                    Pellentesque
+                    Starting a local plan
                   </h3>
 
                   <div
                     class="gem-c-govspeak govuk-govspeak direction-ltr"
-                    data-module="govspeak"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
                     data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
                   >
                     <div class="govspeak">
                       <p>
-                        Curabitur condimentum libero arcu, ut mollis mi
-                        tincidunt quis. In tincidunt egestas ipsum et sagittis.
-                        Sed ac porta leo, scelerisque efficitur sapien.
+                        What you should consider and do before starting your
+                        local plan.
                       </p>
                     </div>
                   </div>
@@ -530,22 +598,821 @@
                           <a
                             data-track-category="navDocumentCollectionLinkClicked"
                             data-track-action="3.1"
-                            data-track-label="/government/publications/class-aptent-taciti-sociosqu-ad"
-                            data-track-options='{"dimension28":"1","dimension29":"Class aptent taciti sociosqu ad"}'
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
                             class="govuk-link"
-                            href="/government/publications/class-aptent-taciti-sociosqu-ad"
-                            >Class aptent taciti sociosqu ad</a
+                            href="#"
+                            >What to include in a project initiation document</a
                           >
                         </div>
 
                         <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            <time datetime="2014-11-24T15:00:03+00:00">
-                              24 November 2014
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
                             </time>
                           </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="3.2"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >What to consider before starting a local plan</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
                           <li class="gem-c-document-list__attribute">
-                            Guidance
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="3.3"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Estimating timescales</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="3.4"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >How to create a key diagram</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="3.5"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Communication your local plan</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="3.6"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >End-of-scoping-phase checklist</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="creating-a-vision-and-strategy"
+                  >
+                    Creating a vision and strategy
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                    data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        What you should consider and who to speak to about the
+                        vision and strategy for your local plan.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="4.1"
+                            data-track-options='{"dimension28":"3","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >What does a 'digital plan' mean?</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="4.2"
+                            data-track-options='{"dimension28":"3","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Consulting and getting feedback on your vision</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="4.3"
+                            data-track-options='{"dimension28":"3","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Pre-engagement checklist</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="selecting-sites"
+                  >
+                    Selecting sites
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                    data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        Covers the process of identifying, assessing and
+                        selecting sites for allocation in a local plan.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="5.1"
+                            data-track-options='{"dimension28":"1","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Introduction: a new framework for site selection</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="drafting-and-publishing-a-local-plan"
+                  >
+                    Drafting and publishing a local plan
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                    data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        How to structure, format and publish a local plan,
+                        includes useful resources and templates.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="6.1"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Following data standards</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="6.2"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Making changes to your plan</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="6.3"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Creating a policies map</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="6.4"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Publishing your plan online</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="6.5"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Structuring your plan</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="engaging-stakeholders"
+                  >
+                    Engaging stakeholders
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                    data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        How to engage stakeholders during the plan-making
+                        process, including when to do it, what to consider, and
+                        how to get best results.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="7.1"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Engaging with developers</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="7.2"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Preparing for consultations</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="7.3"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >How to engage with statutory consultees
+                          </a>
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="7.4"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >How to engage with residents</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="7.5"
+                            data-track-options='{"dimension28":"5","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Engagement checklist</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="validating-your-plan"
+                  >
+                    Validating your plan
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                    data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        How to best validate your plan, make the most of
+                        gateways, and prepare for the examination process.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="8.1"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >How to set up examining sessions</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="8.2"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >How to approach gateways</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="8.3"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Submitting your plan for examination
+                          </a>
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="8.4"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Checking your plan is ready</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="8.5"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >What happens if your fail your examination</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="8.6"
+                            data-track-options='{"dimension28":"6","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Pre-examination checklist</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <h3
+                    class="govuk-heading-m govuk-!-font-size-27"
+                    id="tools-and-resources"
+                  >
+                    Tools and resources
+                  </h3>
+
+                  <div
+                    class="gem-c-govspeak govuk-govspeak direction-ltr"
+                    data-module="govspeak ga4-link-tracker"
+                    data-ga4-track-links-only=""
+                    data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                    data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                    data-govspeak-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <div class="govspeak">
+                      <p>
+                        Examples, case studies, guidance and other useful
+                        resources for each stage of creating a local plan.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    data-module="gem-track-click"
+                    class="govuk-!-margin-bottom-8"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <ul
+                      class="gem-c-document-list govuk-!-margin-bottom-5"
+                      data-module="ga4-link-tracker"
+                      data-ga4-track-links-only=""
+                      data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                      data-ga4-link-tracker-module-started="true"
+                    >
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="9.1"
+                            data-track-options='{"dimension28":"4","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Case study: Ashford Borough Council</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="9.2"
+                            data-track-options='{"dimension28":"4","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Visual standards for maps</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="9.3"
+                            data-track-options='{"dimension28":"4","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Local plan style guide</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gem-c-document-list__item">
+                        <div class="gem-c-document-list__item-title">
+                          <a
+                            data-track-category="navDocumentCollectionLinkClicked"
+                            data-track-action="9.4"
+                            data-track-options='{"dimension28":"4","dimension29":"Search"}'
+                            class="govuk-link"
+                            href="#"
+                            >Example of a local plans timetable</a
+                          >
+                        </div>
+
+                        <ul class="gem-c-document-list__item-metadata">
+                          <li class="gem-c-document-list__attribute">
+                            <time datetime="2024-03-30T14:39:42+00:00">
+                              30 March 2024
+                            </time>
                           </li>
                         </ul>
                       </li>
@@ -553,66 +1420,14 @@
                   </div>
                 </div>
                 <div class="responsive-bottom-margin">
-                  <div
-                    class="app-c-published-dates app-c-published-dates--history"
-                    id="full-publication-update-history"
-                    data-module="gem-toggle"
-                    lang="en"
-                    data-gem-toggle-module-started="true"
-                  >
-                    Published 23 August 2013
-                    <br />Last updated 18 October 2018
-                    <a
-                      href="#full-history"
-                      class="app-c-published-dates__toggle govuk-link"
-                      data-controls="full-history"
-                      data-expanded="false"
-                      data-toggled-text="-&nbsp;hide all updates"
-                      data-module="ga4-event-tracker"
-                      data-ga4-event='{"event_name":"select_content","type":"content history","section":"Footer"}'
-                      data-ga4-expandable=""
-                      role="button"
-                      aria-controls="full-history"
-                      aria-expanded="false"
-                      data-ga4-event-tracker-module-started="true"
-                      id="show-all-updates"
-                      >+&nbsp;show all updates</a
-                    >
-                    <div
-                      class="app-c-published-dates__change-history js-hidden"
-                      id="full-history"
-                      aria-live="polite"
-                      role="region"
-                    >
-                      <ol class="app-c-published-dates__list">
-                        <li class="app-c-published-dates__change-item">
-                          <time
-                            class="app-c-published-dates__change-date timestamp"
-                            datetime="2018-10-18T09:15:59.000+01:00"
-                            >18 October 2018</time
-                          >
-                          <p class="app-c-published-dates__change-note">
-                            Fusce eget porttitor leo eu consequat tellus.
-                          </p>
-                        </li>
-                        <li class="app-c-published-dates__change-item">
-                          <time
-                            class="app-c-published-dates__change-date timestamp"
-                            datetime="2013-08-23T09:10:00.000+01:00"
-                            >23 August 2013</time
-                          >
-                          <p class="app-c-published-dates__change-note">
-                            First published.
-                          </p>
-                        </li>
-                      </ol>
-                    </div>
+                  <div class="app-c-published-dates" lang="en">
+                    Published 18 December 2023
                   </div>
                 </div>
 
                 <div
                   data-sticky-element=""
-                  class="app-c-contents-list-with-body__link-wrapper sticky-element--hidden sticky-element--stuck-to-window sticky-element--enabled"
+                  class="app-c-contents-list-with-body__link-wrapper"
                 >
                   <div class="app-c-contents-list-with-body__link-container">
                     <a
@@ -641,151 +1456,13 @@
             </div>
 
             <div class="govuk-grid-column-one-third">
-              <div class="gem-c-contextual-sidebar">
-                <div
-                  class="gem-c-related-navigation"
-                  data-module="gem-track-click ga4-link-tracker"
-                  data-gem-track-click-module-started="true"
-                  data-ga4-link-tracker-module-started="true"
-                >
-                  <h2
-                    id="related-nav-related_items-f9321359"
-                    class="gem-c-related-navigation__main-heading"
-                    data-track-count="sidebarRelatedItemSection"
-                  >
-                    Related content
-                  </h2>
-
-                  <nav
-                    role="navigation"
-                    class="gem-c-related-navigation__nav-section"
-                    aria-labelledby="related-nav-related_items-f9321359"
-                    data-module="gem-toggle"
-                    data-gem-toggle-module-started="true"
-                  >
-                    <ul class="gem-c-related-navigation__link-list">
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.1 Related content"
-                          data-track-label="/guidance/morbi-nec-tellus-nec-tellus-rhoncus-ultricies-et-vel-sem"
-                          data-track-options='{"dimension28":"4","dimension29":"Morbi nec tellus nec tellus rhoncus ultricies et vel sem"}'
-                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"1","index_section_count":"1","index_total":"4","section":"Related content"}'
-                          href="/guidance/morbi-nec-tellus-nec-tellus-rhoncus-ultricies-et-vel-sem"
-                          >Morbi nec tellus nec tellus rhoncus ultricies et vel
-                          sem</a
-                        >
-                      </li>
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.2 Related content"
-                          data-track-label="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
-                          data-track-options='{"dimension28":"4","dimension29":"Integer lobortis ante auctor vehicula quam malesuada convallis"}'
-                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"2","index_section_count":"1","index_total":"4","section":"Related content"}'
-                          href="/guidance/integer-lobortis-ante-auctor-vehicula-quam-malesuada-convallis"
-                          >Integer lobortis ante auctor vehicula quam malesuada
-                          convallis</a
-                        >
-                      </li>
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.3 Related content"
-                          data-track-label="/government/publications/sed-rutrum-sagittis-dolor-in-venenatis"
-                          data-track-options='{"dimension28":"4","dimension29":"Sed rutrum sagittis dolor in venenatis"}'
-                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"3","index_section_count":"1","index_total":"4","section":"Related content"}'
-                          href="/government/publications/sed-rutrum-sagittis-dolor-in-venenatis"
-                          >Sed rutrum sagittis dolor in venenatis</a
-                        >
-                      </li>
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--sidebar govuk-link gem-c-related-navigation__section-link--other"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.4 Related content"
-                          data-track-label="/guidance/ut-facilisis-ac-nulla-at-hendrerit"
-                          data-track-options='{"dimension28":"4","dimension29":"Ut facilisis ac nulla at hendrerit"}'
-                          data-ga4-link='{"event_name":"navigation","type":"related content","index_section":"1","index_link":"4","index_section_count":"1","index_total":"4","section":"Related content"}'
-                          href="/guidance/ut-facilisis-ac-nulla-at-hendrerit"
-                          >Ut facilisis ac nulla at hendrerit</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+              <div class="gem-c-contextual-sidebar"></div>
             </div>
           </div>
 
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-              <div class="gem-c-contextual-footer">
-                <div
-                  class="gem-c-related-navigation"
-                  data-module="gem-track-click ga4-link-tracker"
-                  data-gem-track-click-module-started="true"
-                  data-ga4-link-tracker-module-started="true"
-                >
-                  <nav
-                    role="navigation"
-                    class="gem-c-related-navigation__nav-section"
-                    aria-labelledby="related-nav-topics-11b0107d"
-                    data-module="gem-toggle"
-                    data-gem-toggle-module-started="true"
-                  >
-                    <h2
-                      id="related-nav-topics-11b0107d"
-                      class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer"
-                      data-track-count="footerRelatedItemSection"
-                    >
-                      Explore the topic
-                    </h2>
-
-                    <ul class="gem-c-related-navigation__link-list">
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.1 Explore the topic"
-                          data-track-label="/explore/sed-tempus-quam"
-                          data-track-options='{"dimension28":"3","dimension29":"Sed tempus quam"}'
-                          data-ga4-link='{"event_name":"navigation","type":"contextual footer","index_section":"1","index_link":"1","index_section_count":"1","index_total":"3","section":"Explore the topic"}'
-                          href="/explore/sed-tempus-quam"
-                          >Sed tempus quam</a
-                        >
-                      </li>
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.2 Explore the topic"
-                          data-track-label="/explore/risus-pellentesque-rhoncus-venenatis"
-                          data-track-options='{"dimension28":"3","dimension29":"Risus pellentesque rhoncus venenatis"}'
-                          data-ga4-link='{"event_name":"navigation","type":"contextual footer","index_section":"1","index_link":"2","index_section_count":"1","index_total":"3","section":"Explore the topic"}'
-                          href="/explore/risus-pellentesque-rhoncus-venenatis"
-                          >Risus pellentesque rhoncus venenatis</a
-                        >
-                      </li>
-                      <li class="gem-c-related-navigation__link">
-                        <a
-                          class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer"
-                          data-track-category="relatedLinkClicked"
-                          data-track-action="1.3 Explore the topic"
-                          data-track-label="/explore/ipsum-blandit-at-laoreet-ante-molestie"
-                          data-track-options='{"dimension28":"3","dimension29":"Ipsum blandit, at laoreet ante molestie"}'
-                          data-ga4-link='{"event_name":"navigation","type":"contextual footer","index_section":"1","index_link":"3","index_section_count":"1","index_total":"3","section":"Explore the topic"}'
-                          href="/explore/ipsum-blandit-at-laoreet-ante-molestie"
-                          >Ipsum blandit, at laoreet ante molestie</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+              <div class="gem-c-contextual-footer"></div>
             </div>
           </div>
         </main>
@@ -824,5 +1501,4 @@
     toggleVisibility();
   };
 </script>
-
 {% endblock %}
