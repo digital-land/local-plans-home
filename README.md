@@ -4,7 +4,7 @@ This alpha application has been built with the [GOV.UK Prototype Kit](https://pr
 
 ## Deployment
 
-This app is deployed to [Heroku](https://local-plans-home-prototype-16fa4c7a1e60.herokuapp.com/) from the `main` branch. The password for the prototype will be provided as needed.
+This app is deployed to [Heroku](https://local-plans-home-prototype-16fa4c7a1e60.herokuapp.com/government/collections/create-or-update-a-local-plan) from the `main` branch. The password for the prototype will be provided as needed.
 
 ## Available Scripts
 
