@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "open-cli http://localhost:3000 && govuk-prototype-kit dev",
+    "dev": "open-cli http://localhost:3000/government/collections/create-or-update-a-local-plan && govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
     "start": "govuk-prototype-kit start"
   },
