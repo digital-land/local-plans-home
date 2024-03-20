@@ -22,15 +22,16 @@ const getAllRoutesFromDir = (dir, ignore = []) => {
   );
 };
 
-const allAvailableRoutes = getAllRoutesFromDir(".", [
-  "layouts",
-  "404.html",
-  "index.html",
-]);
+const allAvailableRoutes = [
+  ...getAllRoutesFromDir(".", ["layouts", "404.html", "index.html"]),
+  "/",
+];
 
 router.use("*", (req, res, next) => {
   if (!allAvailableRoutes.includes(req.originalUrl)) {
-    res.status(404).sendFile(path.join(__dirname, "./views/404.html"));
+    res.status(404).render(path.join(__dirname, "./views/404.html"), {
+      path: req.originalUrl,
+    });
   } else {
     next();
   }
