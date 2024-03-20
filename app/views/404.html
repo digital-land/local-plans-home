@@ -10,7 +10,10 @@ content %}
 <div class="govuk-grid-row not-found-container">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Page not found</h1>
-    <p class="govuk-body">There is no page at the index of this application.</p>
+    <p class="govuk-body">
+      There is no page at
+      <strong id="pathname">{{ path }}</strong>
+    </p>
     <p class="govuk-body">
       This application is for local plans draft content. You can go to
       <a
