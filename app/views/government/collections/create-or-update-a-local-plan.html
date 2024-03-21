@@ -1,6 +1,9 @@
 {% extends "layouts/main.html" %} {% set pageName="Create or update a local plan
 - Collection" %} {% block content %}
 
+<script src="/public/javascripts/contents-sticky.js"></script>
+<link rel="stylesheet" href="/public/css/contents.css" />
+
 <div class="govuk-grid-row draft">
   <div class="govuk-grid-column-full">
     <div
@@ -1436,15 +1439,17 @@
                     </ul>
                   </div>
                 </div>
-                <div class="responsive-bottom-margin">
-                  <div class="app-c-published-dates" lang="en">
-                    Published 18 December 2023
+                <div class="published-dates-button-group">
+                  <div class="responsive-bottom-margin">
+                    <div class="app-c-published-dates" lang="en">
+                      Published 18 December 2023
+                    </div>
                   </div>
                 </div>
 
                 <div
                   data-sticky-element=""
-                  class="app-c-contents-list-with-body__link-wrapper"
+                  class="app-c-contents-list-with-body__link-wrapper sticky-element--hidden sticky-element--stuck-to-window sticky-element--enabled"
                 >
                   <div class="app-c-contents-list-with-body__link-container">
                     <a
