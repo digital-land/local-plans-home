@@ -1,0 +1,337 @@
+{% extends "layouts/main.html" %} {% set pageName="30-month process explained -
+Guidance" %} {% block content %} {% from "govuk/components/accordion/macro.njk"
+import govukAccordion %}
+
+<script src="/public/javascripts/contents-sticky.js"></script>
+<link rel="stylesheet" href="/public/css/contents.css" />
+<link rel="stylesheet" href="/public/css/manual.css" />
+
+<div class="govuk-grid-row draft">
+  <div class="govuk-grid-column-full">
+    <div
+      id="body"
+      class="gem-c-layout-for-public govuk-template__body js-enabled"
+    >
+      <div id="wrapper" class="direction-ltr govuk-width-container">
+        <div class="gem-c-contextual-breadcrumbs">
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="homeLinkClicked"
+                  data-track-action="homeBreadcrumb"
+                  data-track-label=""
+                  data-track-options="{}"
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="2"
+                  data-track-label="/housing-local-and-community"
+                  data-track-options='{"dimension28":"4","dimension29":"Housing, local and community"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"2","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community"
+                  >Housing, local and community</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="3"
+                  data-track-label="/housing-local-and-community/planning-and-building"
+                  data-track-options='{"dimension28":"4","dimension29":"Planning and building"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"3","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community/planning-and-building"
+                  >Planning and building</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="4"
+                  data-track-label="/housing-local-and-community/local-plans"
+                  data-track-options='{"dimension28":"4","dimension29":"Local Plans"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community/local-plans"
+                  >Local Plans</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="4"
+                  data-track-label="/housing-local-and-community/local-plans"
+                  data-track-options='{"dimension28":"4","dimension29":"Local Plans"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="/housing-local-and-community/local-plans/site-selection"
+                  >Site Selection</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+        <header
+          aria-labelledby="manual-title"
+          class="govuk-grid-row manuals-header"
+        >
+          <div class="govuk-grid-column-two-thirds">
+            <h1
+              id="manual-title"
+              class="gem-c-heading govuk-heading-l gem-c-heading--inverse govuk-!-margin-bottom-3"
+            >
+              Selecting sites for development for your local plan
+            </h1>
+
+            <div
+              class="gem-c-metadata gem-c-metadata--inverse"
+              data-module="gem-toggle metadata"
+              data-gem-toggle-module-started="true"
+              data-metadata-module-started="true"
+            >
+              <dl
+                class="gem-c-metadata__list"
+                data-module="gem-track-click"
+                data-gem-track-click-module-started="true"
+              >
+                <dt class="gem-c-metadata__term">From:</dt>
+                <dd class="gem-c-metadata__definition">
+                  <a
+                    class="govuk-link"
+                    href="/government/organisations/department-for-levelling-up-housing-and-communities"
+                    >Department for Levelling Up, Housing and Communities
+                  </a>
+                </dd>
+                <dt class="gem-c-metadata__term">Updated:</dt>
+                <dd
+                  class="gem-c-metadata__definition"
+                  data-module="ga4-link-tracker"
+                  data-ga4-track-links-only=""
+                  data-ga4-link='{"event_name":"navigation","type":"content history","section":"Top"}'
+                  data-ga4-link-tracker-module-started="true"
+                >
+                  -
+                  <a
+                    href="/guidance/selecting-sites-for-development-for-your-local-plan/updates"
+                    >See all updates</a
+                  >
+                </dd>
+              </dl>
+            </div>
+
+            <div class="in-manual-search">
+              <form
+                action="/search/all"
+                data-module="ga4-form-tracker"
+                data-ga4-form-no-answer-undefined=""
+                data-ga4-form-include-text=""
+                data-ga4-form='{"event_name":"search","type":"content","section":"Selecting sites for development for your local plan","action":"search"}'
+                data-ga4-form-tracker-module-started="true"
+              >
+                <input
+                  type="hidden"
+                  name="manual[]"
+                  value="/guidance/selecting-sites-for-development-for-your-local-plan"
+                />
+
+                <div
+                  class="gem-c-search govuk-!-display-none-print gem-c-search--on-govuk-blue"
+                  data-module="gem-toggle-input-class-on-focus"
+                  data-gem-toggle-input-class-on-focus-module-started="true"
+                >
+                  <label for="search-main-b618dc5b" class="gem-c-search__label"
+                    >Search this manual</label
+                  >
+                  <div class="gem-c-search__item-wrapper">
+                    <input
+                      enterkeyhint="search"
+                      class="gem-c-search__item gem-c-search__input js-class-toggle"
+                      id="search-main-b618dc5b"
+                      name="q"
+                      title="Search"
+                      type="search"
+                      value=""
+                    />
+                    <div
+                      class="gem-c-search__item gem-c-search__submit-wrapper"
+                    >
+                      <button
+                        class="gem-c-search__submit"
+                        type="submit"
+                        data-module="gem-track-click"
+                        enterkeyhint="search"
+                        data-gem-track-click-module-started="true"
+                      >
+                        Search
+
+                        <svg
+                          class="gem-c-search__icon"
+                          width="27"
+                          height="27"
+                          viewBox="0 0 27 27"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <circle
+                            cx="12.0161"
+                            cy="11.0161"
+                            r="8.51613"
+                            stroke="currentColor"
+                            stroke-width="3"
+                          ></circle>
+                          <line
+                            x1="17.8668"
+                            y1="17.3587"
+                            x2="26.4475"
+                            y2="25.9393"
+                            stroke="currentColor"
+                            stroke-width="3"
+                          ></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div
+          data-module="gem-track-click ga4-link-tracker"
+          class="gem-c-breadcrumbs govuk-breadcrumbs gem-c-breadcrumbs--border-bottom"
+          data-gem-track-click-module-started="true"
+          data-ga4-link-tracker-module-started="true"
+        >
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="breadcrumbClicked"
+                data-track-action="1"
+                data-track-label="/guidance/selecting-sites-for-development-for-your-local-plan"
+                data-track-options='{"dimension28":"1","dimension29":"Contents"}'
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"1"}'
+                class="govuk-breadcrumbs__link"
+                href="/guidance/selecting-sites-for-development-for-your-local-plan"
+                >Contents</a
+              >
+            </li>
+          </ol>
+        </div>
+        <main role="main" id="content" class="manual-section" lang="en">
+          <span id="Top"></span>
+          <div id="manuals-frontend" class="manuals-frontend-body">
+            <div class="govuk-grid-row">
+              <div class="manual-body">
+                <article aria-labelledby="section-title">
+                  <div class="govuk-grid-column-full">
+                    <h1
+                      id="section-title"
+                      class="gem-c-heading govuk-heading-l govuk-!-margin-bottom-4"
+                    >
+                      Introducing our four stage standardised way to assess
+                      sites
+                    </h1>
+                  </div>
+
+                  <div class="govuk-grid-column-two-thirds">
+                    <p class="gem-c-lead-paragraph">
+                      Introducing a new standardised way to assess sites
+                    </p>
+                  </div>
+
+                  <div class="govuk-grid-column-two-thirds">
+                    {{ govukAccordion({ id: "accordion-default", items: [ {
+                    heading: { text: "How to select sites for development" },
+                    content: { html: '
+                    <p>
+                      The site selection process is a way to identify land you
+                      can use to build housing or employment property, as well
+                      as other land uses.
+                    </p>
+                    <p>The process involves:&nbsp;</p>
+                    <ul>
+                      <li>identifying sites in your area for development</li>
+                      <li>
+                        testing sites to check if they are right for your
+                        development needs
+                      </li>
+                      <li>
+                        creating a list of sites you can use for development
+                      </li>
+                      <li>
+                        choosing which sites you will use to add into your local
+                        plan
+                      </li>
+                    </ul>
+                    <p>
+                      The site selection process could also be informed by or
+                      help feed into your spatial strategy. This means your
+                      sites will align with your local plan and strategy for the
+                      area.
+                    </p>
+                    ' } }, { heading: { text: "Our new standardised way to
+                    select sites" }, content: { html: '
+                    <p>
+                      To help local authorities select sites, we have created a
+                      framework you should follow. This sets out how you can
+                      identify, assess and allocate sites for housing and
+                      employment development.
+                    </p>
+                    <p>
+                      We have created this framework and guidance to help
+                      standardise the process for site selection. This process
+                      should increase the likelihood of success at examination
+                      by showing you’ve created a sound plan. Where there is
+                      local context meaning you cannot follow parts of this
+                      process, you should clearly document and justify
+                      this.&nbsp;
+                    </p>
+                    <h3 id="what-is-not-covered-in-this-framework">
+                      What is not covered in this framework
+                    </h3>
+                    <p>
+                      This framework is designed for assessing sites for housing
+                      and employment development only. To assess any other
+                      sites, you’ll need to use a different process, or adapt
+                      this one.
+                    </p>
+                    ' } } ] }) }}
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div
+              class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-3 govuk-!-margin-bottom-3"
+            >
+              <button
+                class="govuk-link govuk-body-s gem-c-print-link__button"
+                data-module="print-link"
+                data-print-link-module-started="true"
+              >
+                Print this page
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
