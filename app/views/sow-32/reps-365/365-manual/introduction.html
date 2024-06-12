@@ -1,5 +1,6 @@
 {% extends "layouts/main.html" %} {% set pageName="30-month process explained -
-Guidance" %} {% block content %}
+Guidance" %} {% block content %} {% from "govuk/components/accordion/macro.njk"
+import govukAccordion %}
 
 <script src="/public/javascripts/contents-sticky.js"></script>
 <link rel="stylesheet" href="/public/css/contents.css" />
@@ -90,9 +91,9 @@ Guidance" %} {% block content %}
           <div class="govuk-grid-column-two-thirds">
             <h1
               id="manual-title"
-              class="gem-c-heading govuk-heading-l gem-c-heading--inverse govuk-!-margin-bottom-6"
+              class="gem-c-heading govuk-heading-l gem-c-heading--inverse govuk-!-margin-bottom-3"
             >
-              Selecting sites for development for your local plan
+              How to set up automated consultation responses by email 
             </h1>
 
             <div
@@ -151,14 +152,14 @@ Guidance" %} {% block content %}
                   data-module="gem-toggle-input-class-on-focus"
                   data-gem-toggle-input-class-on-focus-module-started="true"
                 >
-                  <label for="search-main-9b9f10f4" class="gem-c-search__label"
+                  <label for="search-main-b618dc5b" class="gem-c-search__label"
                     >Search this manual</label
                   >
                   <div class="gem-c-search__item-wrapper">
                     <input
                       enterkeyhint="search"
                       class="gem-c-search__item gem-c-search__input js-class-toggle"
-                      id="search-main-9b9f10f4"
+                      id="search-main-b618dc5b"
                       name="q"
                       title="Search"
                       type="search"
@@ -217,134 +218,97 @@ Guidance" %} {% block content %}
           data-ga4-link-tracker-module-started="true"
         >
           <ol class="govuk-breadcrumbs__list">
-            <li class="govuk-breadcrumbs__list-item">Contents</li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="breadcrumbClicked"
+                data-track-action="1"
+                data-track-label="/guidance/selecting-sites-for-development-for-your-local-plan"
+                data-track-options='{"dimension28":"1","dimension29":"Contents"}'
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"1"}'
+                class="govuk-breadcrumbs__link"
+                href="/guidance/selecting-sites-for-development-for-your-local-plan"
+                >Contents</a
+              >
+            </li>
           </ol>
         </div>
-        <main role="main" id="content" class="manual" lang="en">
+        <main role="main" id="content" class="manual-section" lang="en">
           <span id="Top"></span>
           <div id="manuals-frontend" class="manuals-frontend-body">
-            <div class="manual-body">
-              <p class="gem-c-lead-paragraph">
-                Local Plans Home manual: Selecting sites for development for
-                your local plan
-              </p>
+            <div class="govuk-grid-row">
+              <div class="manual-body">
+                <article aria-labelledby="section-title">
+                  <div class="govuk-grid-column-full">
+                    <h1
+                      id="section-title"
+                      class="gem-c-heading govuk-heading-l govuk-!-margin-bottom-4"
+                    >
+                      Introduction - How to set up automated consultation responses by email 
+                    </h1>
+                  </div>
 
-              <div
-                class="gem-c-govspeak govuk-govspeak"
-                data-module="govspeak ga4-link-tracker"
-                data-ga4-track-links-only=""
-                data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
-                data-ga4-link='{"event_name":"navigation","type":"callout"}'
-                data-govspeak-module-started="true"
-                data-ga4-link-tracker-module-started="true"
-              >
-                <p>
-                  Site selection is the process of identifying, assessing and
-                  selecting sites for allocation in a local plan
-                </p>
+                  <div class="govuk-grid-column-two-thirds">
+                    <p class="gem-c-lead-paragraph">
+                      This user guide sets out how to install email automation for Microsoft Outlook. It automatically saves emails in response to a Local Plan consultation as a database on Sharepoint. Who 
+                    </p>
+                  </div>
+
+                  <div class="govuk-grid-column-two-thirds">
+                    {{ govukAccordion({ id: "accordion-default", items: [ {
+                    heading: { text: "Who can use the automation" },
+                    content: { html: '
+                    <div class="gem-c-govspeak govuk-govspeak">
+                      <p>
+                        You will need to use the Microsoft 365 suite and have set up consultation responses by email to install this automation.
+                      </p>
+                      <p>You will also need:</p>
+                      <ul>
+                        <li>an email address for the shared consultation mailbox </li>
+                        <li>administrator access to Sharepoint, or owner access to an existing Sharepoint site</li>
+                        <li>administrator access to Microsoft PowerApps</li>
+                      </ul>
+                    </div>
+                    ' } }, { heading: { text: "What the automation does" }, content: { html: '
+                    <div class="gem-c-govspeak govuk-govspeak">
+                      <p>
+                        This free process helps Local Planning Authorities automate the copying of content from all unread Outlook emails to a Sharepoint database.
+                      </p>
+                      <p>
+                        You can export this database as a spreadsheet or CSV file, so it’s easy to share and upload elsewhere.
+                      </p>
+                      <p>
+                        The automation runs once a day, and automatically captures or assigns:
+                      </p>
+                      <ul>
+                        <li>the sender’s email address</li>
+                        <li>a status</li>
+                        <li>the date the email was received</li>
+                        <li>the email subject line</li>
+                        <li>a link to the email, saved in a Sharepoint folder</li>
+                        <li>a copy of the email text</li>
+                        <li>a link to any attachments</li>
+                        <li>an automatically generated reference number</li>
+                      </ul>
+                      <p>
+                        It can also reply to the sender confirming their email has been received.
+                      </p>
+                    </div>
+                    ' } } ] }) }}
+                  </div>
+                </article>
               </div>
+            </div>
 
-              <ul
-                data-module="ga4-link-tracker"
-                data-ga4-track-links-only=""
-                data-ga4-link='{"event_name":"navigation","type":"document list"}'
-                class="gem-c-document-list govuk-!-margin-bottom-5"
-                data-ga4-link-tracker-module-started="true"
+            <div
+              class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-3 govuk-!-margin-bottom-3"
+            >
+              <button
+                class="govuk-link govuk-body-s gem-c-print-link__button"
+                data-module="print-link"
+                data-print-link-module-started="true"
               >
-                <li class="gem-c-document-list__item">
-                  <div class="gem-c-document-list__item-title">
-                    <a
-                      class="govuk-link"
-                      href="/guidance/selecting-sites-for-development-for-your-local-plan/introduction-our-framework-for-site-selection"
-                    >
-                      Introduction - Our framework for site selection</a
-                    >
-                  </div>
-
-                  <p
-                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
-                  >
-                    Introducing our four stage standardised way to assess sites
-                  </p>
-                </li>
-                <li class="gem-c-document-list__item">
-                  <div class="gem-c-document-list__item-title">
-                    <a
-                      class="govuk-link"
-                      href="/guidance/selecting-sites-for-development-for-your-local-plan/stage-1-identifying-sites-for-development"
-                      >Stage 1 - Identifying sites for development</a
-                    >
-                  </div>
-
-                  <p
-                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
-                  >
-                    Finding and gathering information about sites in your local
-                    area, including running a call for sites and what
-                    information you need
-                  </p>
-                </li>
-                <li class="gem-c-document-list__item">
-                  <div class="gem-c-document-list__item-title">
-                    <a
-                      class="govuk-link"
-                      href="/guidance/selecting-sites-for-development-for-your-local-plan/stage-2-categorising-and-assessing-sites"
-                      >Stage 2 - Categorising and assessing sites</a
-                    >
-                  </div>
-
-                  <p
-                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
-                  >
-                    Categorising your list of potential sites and performing a
-                    detailed assessment of their suitability, availability and
-                    achievability
-                  </p>
-                </li>
-                <li class="gem-c-document-list__item">
-                  <div class="gem-c-document-list__item-title">
-                    <a
-                      class="govuk-link"
-                      href="/guidance/selecting-sites-for-development-for-your-local-plan/stage-3-arriving-at-draft-allocations"
-                      >Stage 3 - Arriving at draft allocations</a
-                    >
-                  </div>
-
-                  <p
-                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
-                  >
-                    Drafting your local plan and checking in with PINS
-                  </p>
-                </li>
-                <li class="gem-c-document-list__item">
-                  <div class="gem-c-document-list__item-title">
-                    <a
-                      class="govuk-link"
-                      href="/guidance/selecting-sites-for-development-for-your-local-plan/stage-4-allocating-sites-for-development"
-                      >Stage 4 - Allocating sites for development</a
-                    >
-                  </div>
-
-                  <p
-                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
-                  >
-                    Finalising your evidence base, completing your draft local
-                    plan and submitting to PINS for examination
-                  </p>
-                </li>
-              </ul>
-
-              <div
-                class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-3 govuk-!-margin-bottom-3"
-              >
-                <button
-                  class="govuk-link govuk-body-s gem-c-print-link__button"
-                  data-module="print-link"
-                  data-print-link-module-started="true"
-                >
-                  Print this page
-                </button>
-              </div>
+                Print this page
+              </button>
             </div>
           </div>
         </main>

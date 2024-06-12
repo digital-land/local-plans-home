@@ -1,0 +1,827 @@
+{% extends "layouts/main.html" %} {% set pageName="What to consider when
+engaging on your local plan" %} {% block content %}
+
+<script src="/public/javascripts/contents-sticky.js"></script>
+<link rel="stylesheet" href="/public/css/contents.css" />
+
+<div class="govuk-grid-row draft">
+  <div class="govuk-grid-column-full">
+    <div
+      id="body"
+      class="gem-c-layout-for-public govuk-template__body js-enabled"
+    >
+      <div id="wrapper" class="direction-ltr govuk-width-container">
+        <div class="gem-c-contextual-breadcrumbs">
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="homeLinkClicked"
+                  data-track-action="homeBreadcrumb"
+                  data-track-label=""
+                  data-track-options="{}"
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="2"
+                  data-track-label="/housing-local-and-community"
+                  data-track-options='{"dimension28":"4","dimension29":"Housing, local and community"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"2","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="#"
+                  >Housing, local and community</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="3"
+                  data-track-label="/housing-local-and-community/planning-and-building"
+                  data-track-options='{"dimension28":"4","dimension29":"Planning and building"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"3","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="#"
+                  >Planning and building</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="4"
+                  data-track-label="/housing-local-and-community/local-plans"
+                  data-track-options='{"dimension28":"4","dimension29":"Local Plans"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="#"
+                  >Local Plans</a
+                >
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a
+                  data-track-category="breadcrumbClicked"
+                  data-track-action="4"
+                  data-track-label="/housing-local-and-community/local-plans"
+                  data-track-options='{"dimension28":"4","dimension29":"Local Plans"}'
+                  data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                  class="govuk-breadcrumbs__link"
+                  href="#"
+                  >About Local Plans</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <main role="main" id="content" class="detailed-guide" lang="en">
+          <span id="Top"></span>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div
+                class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8"
+              >
+                <span class="govuk-caption-xl gem-c-title__context">
+                  Guidance
+                </span>
+
+                <h1 class="gem-c-title__text govuk-heading-l">
+                  How to set up automated consultation responses by email 
+                </h1>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-two-thirds">
+              <p class="gem-c-lead-paragraph">
+                This user guide sets out how to install email automation for Microsoft Outlook. 
+                It automatically saves emails in response to a Local Plan consultation as a database on Sharepoint. 
+              </p>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="metadata-logo-wrapper">
+              <div class="govuk-grid-column-two-thirds metadata-column">
+                <div
+                  class="gem-c-metadata"
+                  data-module="gem-toggle metadata"
+                  data-gem-toggle-module-started="true"
+                  data-metadata-module-started="true"
+                >
+                  <dl
+                    class="gem-c-metadata__list"
+                    data-module="gem-track-click"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <dt class="gem-c-metadata__term">From:</dt>
+                    <dd class="gem-c-metadata__definition">
+                      <a
+                        class="govuk-link"
+                        href="#"
+                        >Department for Levelling Up, Housing and Communities
+                      </a>
+                    </dd>
+                    <dt class="gem-c-metadata__term">Published</dt>
+                    <dd class="gem-c-metadata__definition">23 August 2013</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-third"></div>
+            </div>
+          </div>
+
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="govuk-!-display-none-print govuk-!-margin-bottom-6"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+            <form
+              class="gem-c-single-page-notification-button"
+              action="/email/subscriptions/single-page/new"
+              method="POST"
+              data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+              data-track-action="Subscribe-button-top"
+              data-track-category="Single-page-notification-button"
+              data-button-location="top"
+              data-button-text-subscribe="Get emails about this page"
+              data-button-text-unsubscribe="Stop getting emails about this page"
+            >
+              <input
+                type="hidden"
+                name="base_path"
+                value="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+              />
+              <button
+                class="govuk-body-s gem-c-single-page-notification-button__submit"
+                type="submit"
+                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"/email/subscriptions/single-page/new"}'
+              >
+                <svg
+                  class="gem-c-single-page-notification-button__icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  width="18"
+                  viewBox="0 0 459.334 459.334"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"
+                  ></path></svg
+                ><span class="gem-c-single-page-notication-button__text"
+                  >Get emails about this page</span
+                >
+              </button>
+            </form>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div
+                id="contents"
+                class="app-c-contents-list-with-body"
+                data-module="sticky-element-container"
+                data-sticky-element-container-module-started="true"
+              >
+                <div class="responsive-bottom-margin">
+                  <nav
+                    data-module="gem-track-click ga4-link-tracker"
+                    aria-label="Contents"
+                    class="gem-c-contents-list"
+                    role="navigation"
+                    data-gem-track-click-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <h2 class="gem-c-contents-list__title">Contents</h2>
+                    <ol class="gem-c-contents-list__list">
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 1"
+                          data-track-label="#how-to-set-up-and-use-the-automation"
+                          data-track-options='{"dimension29":"How to set up and use the automation"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":1}'
+                          href="#how-to-set-up-and-use-the-automation"
+                          >How to set up and use the automation</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 2"
+                          data-track-label="#create-a-new-sharepoint-site"
+                          data-track-options='{"dimension29":"Create a new Sharepoint Site"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":2}'
+                          href="#create-a-new-sharepoint-site"
+                          >Create a new Sharepoint site</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 3"
+                          data-track-label="#install-the-automation"
+                          data-track-options='{"dimension29":"Install the automation"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":3}'
+                          href="#install-the-automation"
+                          >Install the automation</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 4"
+                          data-track-label="#run-the-automation"
+                          data-track-options='{"dimension29":"Run the automation"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":4}'
+                          href="#run-the-automation"
+                          >Run the automation</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 5"
+                          data-track-label="#access-and-use-the-database"
+                          data-track-options='{"dimension29":"Access and use the database"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":5}'
+                          href="#access-and-use-the-database"
+                          >Access and use the database</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 6"
+                          data-track-label="#export-your-data"
+                          data-track-options='{"dimension29":"Export your data"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":5}'
+                          href="#export-your-data"
+                          >Export your data</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 7"
+                          data-track-label="#turn-off-the-automation"
+                          data-track-options='{"dimension29":"Turn off the automation"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":5}'
+                          href="#turn-off-the-automation"
+                          >Turn off the automation</a
+                        >
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          data-track-category="contentsClicked"
+                          data-track-action="content_item 8"
+                          data-track-label="#uninstall-the-automation"
+                          data-track-options='{"dimension29":"Uninstall the automation"}'
+                          data-ga4-link='{"event_name":"select_content","section":"Contents","type":"contents list","index_total":5,"index_link":5}'
+                          href="#uninstall-the-automation"
+                          >Uninstall the automation</a
+                        >
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+
+                <div
+                  class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-0 govuk-!-margin-bottom-6"
+                >
+                  <button
+                    class="govuk-link govuk-body-s gem-c-print-link__button"
+                    data-module="print-link"
+                    data-print-link-module-started="true"
+                  >
+                    Print this page
+                  </button>
+                </div>
+
+                <div
+                  class="gem-c-govspeak govuk-govspeak"
+                  data-module="govspeak ga4-link-tracker"
+                  data-ga4-track-links-only=""
+                  data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                  data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                  data-govspeak-module-started="true"
+                  data-ga4-link-tracker-module-started="true"
+                >
+                  <div class="govspeak">
+
+                  <!---                     
+                    <h2 id="how-to-set-up-and-use-the-automation">
+                      How to set up and use the automation 
+                    </h2>
+
+                    <p>
+                      This guide covers the steps needed to set up, turn on and use this automation.
+                    </p>
+
+                    <p>
+                      The first task is to create a new Sharepoint site. If you want to use an existing Sharepoint site instead, you can skip to the Install the automation section. 
+                    </p>
+                  -->
+
+                    <h2 id="create-a-new-sharepoint-site">Create a new Sharepoint site</h2>
+
+                    <p>
+                      You need a Sharepoint site to store the email data. If your team already has one set up and you’d prefer to use that, you can skip this section and install the automation.
+                    </p>
+
+                    <ol>
+                      <li><a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fsupport.microsoft.com.mcas.ms%2Fen-gb%2Foffice%2Fsign-in-to-sharepoint-324a89ec-e77b-4475-b64a-13a0c14c45ec%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">Sign in to Sharepoint</a>, then select <strong>Create site</strong> on the start page
+                      </li>
+                      <img src="/public/images/1-create-site.png" alt="User icon">
+                      <li>
+                        Select <strong>Team site</strong> and then <strong>Standard team template</strong> 
+                      </li>
+                      <li>
+                        Select <strong>Use template</strong> on the preview page 
+                      </li>
+                      <img src="/public/images/2-site-template.png" alt="User icon">
+                      <li>
+                        Give your site a name. For example, [Your LPA name] Local Plan Consultation responses 
+                      </li>
+                      <li>
+                        Add a description for your Sharepoint site
+                      </li>
+                      <li>
+                        Assign an owner (this can be you or anyone else who will have access to your site) 
+                      </li>
+                      <img src="/public/images/3-site-name.png" alt="User icon">
+                      <li>
+                        If you see the below screen, set the privacy settings as <strong>Private - only members can access this site</strong>, then choose your language and timezone
+                      </li>
+                      <img src="/public/images/4-language.png" alt="User icon">
+                      <li>
+                        Add users to your site using their email addresses. Anyone you want to have access to the Consultation responses will need access to the Sharepoint site
+                      </li>
+                    </ol>
+
+                    <p>
+                      You should create a new Sharepoint site for each consultation you’re running. For example, if you want to set this automation for multiple mailboxes, each mailbox will need its own Sharepoint site.
+                    </p>
+
+                    <h2 id="install-the-automation">Install the automation</h2>
+
+                    <h3>1. Add the flow to Microsoft 365</h3>
+                    <ul>
+                      <li>
+                        <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fgithub.com.mcas.ms%2Fdigital-land%2Flocal-plans-consultations-email-automation%2Fraw%2Fmain%2FPlanningconsultationemailprocessing_1_0_0_13_managed.zip%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">Download this zip file</a> by following the link 
+                      </li>
+                      <li>
+                        Go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">make.powerapps.com</a> in your browser and sign in (if prompted). If this is your first time using PowerApps, you may need to fill some contact information based on your preferences  
+                      </li>
+                      <li>
+                        Check the Environment option at the top of the screen and see if you can choose “Personal Productivity”. If so, select it. If not, leave your environment as the default option  
+                      </li>
+                      <img src="/public/images/5-import.png" alt="User icon">
+                      <li>
+                        Select <strong>Solutions</strong> from the left hand side menu, then <strong>Import Solution</strong>
+                      </li>
+                      <img src="/public/images/6-import.png" alt="User icon">
+                      <li>
+                        Select the Browse button and find the zip file in your downloads folder – select the whole zip file (called <strong>Planningconsultationemailprocessing_1_0_0_13_managed</strong>), not individual items within it  
+                      </li>
+                      <li>
+                        Select <strong>Next</strong> to add the automation to Power Platforms 
+                      </li>
+                    </ul>
+
+                    <h3>2. Connect the automation to your mailbox</h3>
+
+                    <ul>
+                      <li>
+                        You may be prompted to update some settings – select <strong>Continue</strong>
+                      </li>
+                      <li>
+                        Before selecting Next, select the three dots beside <strong>Planning Consultation Mailbox</strong> and select <strong>Add new connection </strong>
+                      </li>
+                      <img src="/public/images/7-import.png" alt="User icon">
+                      <li>
+                        Select the account that has access to your shared mailbox. You’ll be prompted to sign in to this mailbox – you’ll need the password in order to do this. If you don’t have the password to this mailbox, contact your Microsoft Administrator to find out how to get it.  
+                      </li>
+                      <li>
+                        Select <strong>Next</strong> to continue 
+                      </li>
+                    </ul>
+
+                    <h3>3. Connect the automation to Sharepoint</h3>
+
+                    <p>
+                      You do not need to create a new folder for this automation. The <strong>Sharepoint list name</strong> field on this page (explained later in this step) will do this automatically.
+                    </p>
+                    <a
+                    class="govuk-link"
+                    href="#"
+                    >Department for Levelling Up, Housing and Communities
+                  </a>
+
+                    <p>
+                      The following steps may be in a slightly different order depending on your system.
+                    </p>
+
+                    <ul>
+                      <li>
+                        Add the URL of the Sharepoint site you created earlier to the <strong>Sharepoint site URL</strong> field. It should be in the format: <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example, <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong>. <br> <br>
+                        If you’re using an existing site, add its URL in the format <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong> –  to the <strong>Sharepoint site URL</strong> field 
+                      </li>
+                      <li>
+                        Choose an appropriate list name (for example, [your LPA name] Consultation responses) and add it to the <strong>Sharepoint list name</strong> field. <br><br>Your list name will be displayed on the left hand side navigation of your Sharepoint site once the automation is installed, so you can access it easily
+                      </li>
+                      <li>
+                        Choose which mailbox folder you’d like the automation to run from – this will usually be the Inbox, but if you’ve set up rules to automatically forward responses to a different folder, you can change it 
+                      </li>
+                      <li>
+                        You can also turn on automatic responses. These are pre-written automatic replies to emails sent to your consultation inbox. Responses are sent once a day in bulk. To turn these on, select <strong>Yes</strong> for <strong>Email Acknowledgement Required</strong>
+                      </li>
+                      <li>
+                        Enter the shared mailbox email address in the field <strong>Shared mailbox address</strong>
+                      </li>
+                      <img src="/public/images/8-import.png" alt="User icon">
+                    </ul>
+
+                    <h3>4. Import the automation</h3>
+
+                    <ul>
+                      <li>
+                        Select <strong>Import</strong> and wait until the “Currently importing” message at the top of your screen turns into a green bar, which tells you the import has been successful 
+                      </li>
+                      <li>
+                        Select the <strong>Managed</strong> button at the top of the list
+                      </li>
+                      <img src="/public/images/9-import-1.png" alt="User icon">
+                      <img src="/public/images/10-import-2.png" alt="User icon">
+                    </ul>
+
+                    <p>
+                      The automation should now be installed, and you can test if it works.  
+                    </p>
+
+                    <h2 id="run-the-automation">Run the automation</h2>
+
+                    <p>
+                      To check that the automation has installed and works properly, start by sending a test email, including an attachment, to the shared mailbox address. 
+                    </p>
+
+                    <p>
+                      Make sure you do not have any unread emails in your shared mailbox before you start the test.
+                    </p>
+
+                    <p>
+                      Once you’ve sent the email, follow these steps:
+                    </p>
+
+                    <ul>
+                      <li>
+                        go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">make.powerapps.com</a> 
+                      </li>
+                      <li>
+                        go to <strong>Solutions</strong> on the left hand navigation pane
+                      </li>
+                      <li>
+                        choose <strong>Managed</strong> at the top of the list 
+                      </li>
+                      <li>
+                        select <strong>Planning consultation email processing</strong>
+                      </li>
+                      <li>
+                        select <strong>Run</strong> at the top of the screen, and the <strong>Run Flow</strong> button that will appear in the sidebar 
+                      </li>
+                      <li>
+                        select <strong>Done</strong>
+                      </li>
+                    </ul>
+
+                    <p>
+                      This will manually run the automation. You can do this whenever you need to test it, or if you’d like to pull emails into the database outside the normal daily run time. 
+                    </p>
+ 
+                    <p>
+                      You should be able to see the run history on your Power Platforms page. The run request you’ve just made will say <strong>“Running”</strong>. 
+                    </p>
+                    
+                    <p>
+                      Use the Refresh icon if there is a delay between the run completing and the status automatically updating. 
+                    </p>
+
+                    <p>
+                      Once the run request has completed, the status should say <strong>“Succeeded”</strong>.
+                    </p>
+
+                    <img src="/public/images/11-database.png" alt="User icon">
+                    <p>
+                      You can now go back to the Sharepoint site you linked to the automation. 
+                    </p>
+
+                    <p>
+                      Select the Settings/gear icon, select site contents and select the list name you specified in the <strong>Sharepoint list name</strong> field during setup. You should see a table with the following columns: 
+                    </p>
+
+                    <ul>
+                      <li>reference</li>
+                      <li>email address</li>
+                      <li>status</li>
+                      <li>date and time</li>
+                      <li>subject line</li>
+                      <li>email link</li>
+                      <li>email text</li>
+                      <li>attachments</li>
+                    </ul>
+
+                    <p>
+                      If your automation is working, you should see the data from your test email in the table, along with any other unread emails in your shared mailbox.
+                    </p>
+
+                    <p>
+                      If you selected automatic responses, you should also receive an email acknowledgement back to your email address.
+                    </p>
+
+                    <p>
+                      If the automation isn’t working, or the run request says <strong>“Failed”</strong> next to it, select the run request. 
+                    </p>
+
+                    <p>
+                      You’ll see a flow chart, which should have green ticks against every part of the flow that was successful. Finding the parts of the flow chart that were not successful should help you troubleshoot the issue. If you need further support, reach out to your IT team.
+                    </p>
+
+                    <p>
+                      For information on how to delete the solution and content created during this test please go to the <a href="#uninstall-the-automation">Uninstalling the automation</a> section.
+                    </p>
+
+                    <h3>Using the automation for multiple consultations</h3>
+
+                    <p>
+                      If you want to use the solution across multiple consultations for one Local Plan, turn the automation back on when consultation reopens. The responses will be added to the same list as for your previous consultation. 
+                    </p>
+
+                    <p>
+                      If you want to have different lists and folders for each consultation, you need to <a href="">remove the automation</a> and install it again. 
+                    </p>
+
+                    <h2 id="access-and-use-the-database">Access and use the database</h2>
+
+                    <p>
+                      If you’ve successfully tested the automation and everything is working properly, you should now be able to use the database. 
+                    </p>
+
+                    <p>
+                      To get started:
+                    </p>
+
+                    <ol>
+                      <li>
+                        go to your Sharepoint URL
+                      </li>
+                      <li>
+                        select <strong>Settings</strong> – the gear icon – and then select Site contents 
+                      </li>
+                      <li>
+                        there will be a folder called ‘Planning Consultation Emails’ –  select this folder to open it 
+                      </li>
+                      <li>
+                        there will be a sub-folder with the name of the list you created during the set-up process. All emails are stored in this folder 
+                      </li>
+                      <li>
+                        update the status of any downloaded email by selecting the individual row the email is on 
+                      </li>
+                      <li>
+                        a new panel will appear with all the details of that specific email, and you can edit the status from this panel  
+                      </li>
+                    </ol>
+
+                    <h2 id="export-your-data">Export your data</h2>
+
+                    <ol>
+                      <li>
+                        go to your Sharepoint site and select <strong>Export</strong> at the top of the page
+                      </li>
+                      <li>
+                        choose <strong>Export to Excel</strong> and download the file 
+                      </li>
+                      <li>
+                        open your file in Excel 
+                      </li>
+                    </ol>
+
+                    <p>
+                      You’ll be able to see most of the email data, including the location in Sharepoint where the email is saved, but you will not be able to see any attachment data except the number of files that were attached.
+                    </p>
+
+                    <h3>Updating your exported database</h3>
+
+                    <p>
+                      Once you export the database, you can still pull new emails through to it by following these steps: 
+                    </p>
+
+                    <ol>
+                      <li>
+                        open your downloaded Excel spreadsheet
+                      </li>
+                      <li>
+                        select the <strong>Data</strong> tab at the top of the Excel spreadsheet
+                      </li>
+                      <li>
+                        select <strong>Refresh all</strong>. This will bring any new emails that are in the database through to your Excel spreadsheet
+                      </li>
+                      <li>
+                        select <strong>Save</strong> once you’ve done this so you do not lose any data
+                      </li>
+                    </ol>
+
+                    <h2 id="turn-off-the-automation">Turn the automation off</h2>
+
+                    <p>
+                      When you’re no longer accepting responses to your consultation, make sure to turn off the automation.
+                    </p>
+
+                    <ul>
+                      <li>go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">make.powerapps.com</a></li>
+                      <li>go to Solutions</li>
+                      <li>choose <strong>Managed</strong>, then select <strong>Planning consultation email processing</strong></li>
+                      <li>select the <strong>Turn off</strong> button – if this has been successful, it will turn into a Turn on button</li>
+                      <img src="/public/images/12-uninstall.png" alt="User icon">
+                    </ul>
+
+                    <h2 id="uninstall-the-automation">Uninstall the automation</h2>
+
+                    <p>
+                      If for any reason you no longer want to use the automation, or you need to reinstall it because of an issue, you can follow these steps.
+                    </p>
+
+                    <p>
+                      To uninstall: 
+                    </p>
+
+                    <ol>
+                      <li>go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">make.powerapps.com</a> and select <strong>Solutions</strong></li>
+                      <li>choose <strong>Managed</strong> at the top of the list, then select <strong>Planning consultation email processing</strong> </li>
+                      <li>select the <strong>three dots</strong> next to ‘Planning consultation email processing’ and select <strong>Delete</strong> </li>
+                      <li>confirm you would like to remove this solution – once you’ve done this, it will remove the solution from your PowerApps environment</li>
+                      <li>to remove the lists created by the automation, navigate to your Sharepoint URL</li>
+                      <li>Select <strong>settings</strong> – the gear icon – then select <strong>Site contents</strong></li>
+                      <li>in the Site contents page there will be a folder called Planning Consultation Emails. Select the three dots next to this and select <strong>Delete</strong>. This will <strong>remove all sub-folders contained within this folder </strong></li>
+                      <li>on the same screen, select the three dots next to the list name you created during set-up, then select <strong>Delete</strong>. This will <strong>remove all sub-folders contained within this list</strong></li>
+                    </ol>
+
+                  </div>
+                </div>
+
+                <div
+                  class="app-c-published-dates govuk-!-margin-bottom-5"
+                  lang="en"
+                >
+                  Published 23 August 2013
+                </div>
+
+                <div class="published-dates-button-group">
+                  <div
+                    data-module="gem-track-click ga4-link-tracker"
+                    class="govuk-!-display-none-print govuk-!-margin-bottom-3"
+                    data-gem-track-click-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <form
+                      class="gem-c-single-page-notification-button"
+                      action="/email/subscriptions/single-page/new"
+                      method="POST"
+                      data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+                      data-track-action="Subscribe-button-bottom"
+                      data-track-category="Single-page-notification-button"
+                      data-button-location="bottom"
+                      data-button-text-subscribe="Get emails about this page"
+                      data-button-text-unsubscribe="Stop getting emails about this page"
+                    >
+                      <input
+                        type="hidden"
+                        name="base_path"
+                        value="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+                      />
+                      <button
+                        class="govuk-body-s gem-c-single-page-notification-button__submit"
+                        type="submit"
+                        data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":2,"index_total":2,"section":"Footer","url":"/email/subscriptions/single-page/new"}'
+                      >
+                        <svg
+                          class="gem-c-single-page-notification-button__icon"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="18"
+                          width="18"
+                          viewBox="0 0 459.334 459.334"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"
+                          ></path></svg
+                        ><span class="gem-c-single-page-notication-button__text"
+                          >Get emails about this page</span
+                        >
+                      </button>
+                    </form>
+                  </div>
+
+                  <div
+                    class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-0 govuk-!-margin-bottom-8"
+                  >
+                    <button
+                      class="govuk-link govuk-body-s gem-c-print-link__button"
+                      data-module="print-link"
+                      data-print-link-module-started="true"
+                    >
+                      Print this page
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  data-sticky-element=""
+                  class="app-c-contents-list-with-body__link-wrapper sticky-element--hidden sticky-element--stuck-to-window sticky-element--enabled"
+                >
+                  <div class="app-c-contents-list-with-body__link-container">
+                    <a
+                      class="govuk-link app-c-back-to-top dont-print"
+                      href="#contents"
+                    >
+                      <svg
+                        class="app-c-back-to-top__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="17"
+                        viewBox="0 0 13 17"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"
+                        ></path>
+                      </svg>
+                      Contents
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <div class="gem-c-contextual-sidebar"></div>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="gem-c-contextual-footer"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
