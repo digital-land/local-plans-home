@@ -1,6 +1,5 @@
 {% extends "layouts/main.html" %} {% set pageName="30-month process explained -
-Guidance" %} {% block content %} {% from "govuk/components/accordion/macro.njk"
-import govukAccordion %}
+Guidance" %} {% block content %}
 
 <script src="/public/javascripts/contents-sticky.js"></script>
 <link rel="stylesheet" href="/public/css/contents.css" />
@@ -78,7 +77,7 @@ import govukAccordion %}
                   data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
                   class="govuk-breadcrumbs__link"
                   href="/housing-local-and-community/local-plans/site-selection"
-                  >Site Selection</a
+                  >Consultations</a
                 >
               </li>
             </ol>
@@ -91,9 +90,9 @@ import govukAccordion %}
           <div class="govuk-grid-column-two-thirds">
             <h1
               id="manual-title"
-              class="gem-c-heading govuk-heading-l gem-c-heading--inverse govuk-!-margin-bottom-3"
+              class="gem-c-heading govuk-heading-l gem-c-heading--inverse govuk-!-margin-bottom-6"
             >
-              Selecting sites for development for your local plan
+            How to set up automated consultation responses by email 
             </h1>
 
             <div
@@ -152,14 +151,14 @@ import govukAccordion %}
                   data-module="gem-toggle-input-class-on-focus"
                   data-gem-toggle-input-class-on-focus-module-started="true"
                 >
-                  <label for="search-main-b618dc5b" class="gem-c-search__label"
+                  <label for="search-main-9b9f10f4" class="gem-c-search__label"
                     >Search this manual</label
                   >
                   <div class="gem-c-search__item-wrapper">
                     <input
                       enterkeyhint="search"
                       class="gem-c-search__item gem-c-search__input js-class-toggle"
-                      id="search-main-b618dc5b"
+                      id="search-main-9b9f10f4"
                       name="q"
                       title="Search"
                       type="search"
@@ -218,118 +217,108 @@ import govukAccordion %}
           data-ga4-link-tracker-module-started="true"
         >
           <ol class="govuk-breadcrumbs__list">
-            <li class="govuk-breadcrumbs__list-item">
-              <a
-                data-track-category="breadcrumbClicked"
-                data-track-action="1"
-                data-track-label="/guidance/selecting-sites-for-development-for-your-local-plan"
-                data-track-options='{"dimension28":"1","dimension29":"Contents"}'
-                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"1"}'
-                class="govuk-breadcrumbs__link"
-                href="/guidance/selecting-sites-for-development-for-your-local-plan"
-                >Contents</a
-              >
-            </li>
+            <li class="govuk-breadcrumbs__list-item">Contents</li>
           </ol>
         </div>
-        <main role="main" id="content" class="manual-section" lang="en">
+        <main role="main" id="content" class="manual" lang="en">
           <span id="Top"></span>
           <div id="manuals-frontend" class="manuals-frontend-body">
-            <div class="govuk-grid-row">
-              <div class="manual-body">
-                <article aria-labelledby="section-title">
-                  <div class="govuk-grid-column-full">
-                    <h1
-                      id="section-title"
-                      class="gem-c-heading govuk-heading-l govuk-!-margin-bottom-4"
-                    >
-                      Introduction - Our framework for site selection
-                    </h1>
-                  </div>
+            <div class="manual-body">
+              <p class="gem-c-lead-paragraph">
+                Local Plans Home manual: How to set up automated consultation responses by email 
+              </p>
 
-                  <div class="govuk-grid-column-two-thirds">
-                    <p class="gem-c-lead-paragraph">
-                      Introducing our four stage standardised way to assess
-                      sites
-                    </p>
-                  </div>
-
-                  <div class="govuk-grid-column-two-thirds">
-                    {{ govukAccordion({ id: "accordion-default", items: [ {
-                    heading: { text: "How to select sites for development" },
-                    content: { html: '
-                    <div class="gem-c-govspeak govuk-govspeak">
-                      <p>
-                        The site selection process is a way to identify land you
-                        can use to build housing or employment property, as well
-                        as other land uses.
-                      </p>
-                      <p>The process involves:&nbsp;</p>
-                      <ul>
-                        <li>identifying sites in your area for development</li>
-                        <li>
-                          testing sites to check if they are right for your
-                          development needs
-                        </li>
-                        <li>
-                          creating a list of sites you can use for development
-                        </li>
-                        <li>
-                          choosing which sites you will use to add into your
-                          local plan
-                        </li>
-                      </ul>
-                      <p>
-                        The site selection process could also be informed by or
-                        help feed into your spatial strategy. This means your
-                        sites will align with your local plan and strategy for
-                        the area.
-                      </p>
-                    </div>
-                    ' } }, { heading: { text: "Our new standardised way to
-                    select sites" }, content: { html: '
-                    <div class="gem-c-govspeak govuk-govspeak">
-                      <p>
-                        To help local authorities select sites, we have created
-                        a framework you should follow. This sets out how you can
-                        identify, assess and allocate sites for housing and
-                        employment development.
-                      </p>
-                      <p>
-                        We have created this framework and guidance to help
-                        standardise the process for site selection. This process
-                        should increase the likelihood of success at examination
-                        by showing you’ve created a sound plan. Where there is
-                        local context meaning you cannot follow parts of this
-                        process, you should clearly document and justify
-                        this.&nbsp;
-                      </p>
-                      <h3 id="what-is-not-covered-in-this-framework">
-                        What is not covered in this framework
-                      </h3>
-                      <p>
-                        This framework is designed for assessing sites for
-                        housing and employment development only. To assess any
-                        other sites, you’ll need to use a different process, or
-                        adapt this one.
-                      </p>
-                    </div>
-                    ' } } ] }) }}
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <div
-              class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-3 govuk-!-margin-bottom-3"
-            >
-              <button
-                class="govuk-link govuk-body-s gem-c-print-link__button"
-                data-module="print-link"
-                data-print-link-module-started="true"
+              <div
+                class="gem-c-govspeak govuk-govspeak"
+                data-module="govspeak ga4-link-tracker"
+                data-ga4-track-links-only=""
+                data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                data-govspeak-module-started="true"
+                data-ga4-link-tracker-module-started="true"
               >
-                Print this page
-              </button>
+                <p>
+                  This user guide sets out how to install email automation for Microsoft Outlook. It automatically saves emails in response to a Local Plan consultation as a database on Sharepoint. 
+                </p>
+                <p>
+                  The automation is quick to set up, can potentially save 1-2 months of administration per consultation, and comes at no extra cost for Microsoft 365 users. 
+                </p>
+                <p>
+                  Here’s what you need to run the automation, what it does, and how to set up the automation in Outlook. You can also learn how to use the database once it’s set up.
+                </p>
+              </div>
+
+              <ul
+                data-module="ga4-link-tracker"
+                data-ga4-track-links-only=""
+                data-ga4-link='{"event_name":"navigation","type":"document list"}'
+                class="gem-c-document-list govuk-!-margin-bottom-5"
+                data-ga4-link-tracker-module-started="true"
+              >
+                <li class="gem-c-document-list__item">
+                  <div class="gem-c-document-list__item-title">
+                    <a
+                      class="govuk-link"
+                      href="365-manual/introduction"
+                    >
+                      Introduction</a
+                    >
+                  </div>
+
+                  <p
+                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
+                  >
+                    Introducing our four stage standardised way to assess sites
+                  </p>
+                </li>
+                <li class="gem-c-document-list__item">
+                  <div class="gem-c-document-list__item-title">
+                    <a
+                      class="govuk-link"
+                      href="365-manual/installation"
+                      >How to install the automation</a
+                    >
+                  </div>
+
+                  <p
+                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
+                  >
+                    Finding and gathering information about sites in your local
+                    area, including running a call for sites and what
+                    information you need
+                  </p>
+                </li>
+                <li class="gem-c-document-list__item">
+                  <div class="gem-c-document-list__item-title">
+                    <a
+                      class="govuk-link"
+                      href="365-manual/troubleshooting"
+                      >Get help</a
+                    >
+                  </div>
+
+                  <p
+                    class="gem-c-document-list__item-description gem-c-document-list__item-description--full-size"
+                  >
+                    Categorising your list of potential sites and performing a
+                    detailed assessment of their suitability, availability and
+                    achievability
+                  </p>
+                </li>
+                
+              </ul>
+
+              <div
+                class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-3 govuk-!-margin-bottom-3"
+              >
+                <button
+                  class="govuk-link govuk-body-s gem-c-print-link__button"
+                  data-module="print-link"
+                  data-print-link-module-started="true"
+                >
+                  Print this page
+                </button>
+              </div>
             </div>
           </div>
         </main>
