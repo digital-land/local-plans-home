@@ -357,7 +357,7 @@ engaging on your local plan" %} {% block content %}
                       You need a Sharepoint site to store the email data. If your team already has one set up and you’d prefer to use that, you can skip this section and install the automation.
                     </p>
 
-                    <ol>
+                    <ul>
                       <li><a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fsupport.microsoft.com.mcas.ms%2Fen-gb%2Foffice%2Fsign-in-to-sharepoint-324a89ec-e77b-4475-b64a-13a0c14c45ec%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55" rel="noreferrer noopener" target="_blank">Sign in to Sharepoint (opens in new tab)</a>, then select <strong>Create site</strong> on the start page
                       </li>
                       <img src="/public/images/1-create-site.png" alt="User icon">
@@ -385,7 +385,7 @@ engaging on your local plan" %} {% block content %}
                       <li>
                         Add users to your site using their email addresses. Anyone you want to have access to the Consultation responses will need access to the Sharepoint site
                       </li>
-                    </ol>
+                    </ul>
 
                     <p>
                       You should create a new Sharepoint site for each consultation you’re running. For example, if you want to set this automation for multiple mailboxes, each mailbox will need its own Sharepoint site.
@@ -447,7 +447,9 @@ engaging on your local plan" %} {% block content %}
 
                     <ul>
                       <li>
-                        Add the URL of the Sharepoint site you created earlier to the <strong>Sharepoint site URL</strong> field. It should be in the format: <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example, <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong>. <br> <br>
+                        Add the URL of the Sharepoint site you created earlier to the <strong>Sharepoint site URL</strong> field. It should be in the format: <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example, <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong>.
+                      </li>
+                      <li>
                         If you’re using an existing site, add its URL in the format <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong> –  to the <strong>Sharepoint site URL</strong> field 
                       </li>
                       <li>
@@ -569,10 +571,6 @@ engaging on your local plan" %} {% block content %}
                       You’ll see a flow chart, which should have green ticks against every part of the flow that was successful. Finding the parts of the flow chart that were not successful should help you troubleshoot the issue. If you need further support, reach out to your IT team.
                     </p>
 
-                    <p>
-                      For information on how to delete the solution and content created during this test please go to the <a href="#uninstall-the-automation">Uninstall the automation</a> section.
-                    </p>
-
                     <h3>Using the automation for multiple consultations</h3>
 
                     <p>
@@ -593,7 +591,7 @@ engaging on your local plan" %} {% block content %}
                       To get started:
                     </p>
 
-                    <ol>
+                    <ul>
                       <li>
                         go to your Sharepoint URL
                       </li>
@@ -612,11 +610,11 @@ engaging on your local plan" %} {% block content %}
                       <li>
                         a new panel will appear with all the details of that specific email, and you can edit the status from this panel  
                       </li>
-                    </ol>
+                    </ul>
 
                     <h2 id="export-your-data">Export your data</h2>
 
-                    <ol>
+                    <ul>
                       <li>
                         go to your Sharepoint site and select <strong>Export</strong> at the top of the page
                       </li>
@@ -626,7 +624,7 @@ engaging on your local plan" %} {% block content %}
                       <li>
                         open your file in Excel 
                       </li>
-                    </ol>
+                    </ul>
 
                     <p>
                       You’ll be able to see most of the email data, including the location in Sharepoint where the email is saved, but you will not be able to see any attachment data except the number of files that were attached.
@@ -638,7 +636,7 @@ engaging on your local plan" %} {% block content %}
                       Once you export the database, you can still pull new emails through to it by following these steps: 
                     </p>
 
-                    <ol>
+                    <ul>
                       <li>
                         open your downloaded Excel spreadsheet
                       </li>
@@ -651,7 +649,7 @@ engaging on your local plan" %} {% block content %}
                       <li>
                         select <strong>Save</strong> once you’ve done this so you do not lose any data
                       </li>
-                    </ol>
+                    </ul>
 
                     <h2 id="turn-off-the-automation">Turn the automation off</h2>
 
@@ -677,7 +675,7 @@ engaging on your local plan" %} {% block content %}
                       To uninstall: 
                     </p>
 
-                    <ol>
+                    <ul>
                       <li>go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55"rel="noreferrer noopener" target="_blank">make.powerapps.com (opens in new tab)</a> and select <strong>Solutions</strong></li>
                       <li>choose <strong>Managed</strong> at the top of the list, then select <strong>Planning consultation email processing</strong> </li>
                       <li>select the <strong>three dots</strong> next to ‘Planning consultation email processing’ and select <strong>Delete</strong> </li>
@@ -686,7 +684,7 @@ engaging on your local plan" %} {% block content %}
                       <li>Select <strong>settings</strong> – the gear icon – then select <strong>Site contents</strong></li>
                       <li>in the Site contents page there will be a folder called Planning Consultation Emails. Select the three dots next to this and select <strong>Delete</strong>. This will <strong>remove all sub-folders contained within this folder </strong></li>
                       <li>on the same screen, select the three dots next to the list name you created during set-up, then select <strong>Delete</strong>. This will <strong>remove all sub-folders contained within this list</strong></li>
-                    </ol>
+                    </ul>
 
                   </div>
                 </div>
