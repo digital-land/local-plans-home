@@ -236,6 +236,15 @@
                         <span aria-hidden="true"></span>
                         <a
                           class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          href="#turn-the-automation-off"
+                          >Turn the automation off</a>
+                      </li>
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
                           href="#uninstall-the-automation"
                           >Uninstall the automation</a>
                       </li>
@@ -280,6 +289,10 @@
                     </p>
                   -->
 
+                  <p>
+                    These instructions explain how to install the Microsoft Outlook automation. They include how to test, run and uninstall the software, which will help planners with automated consultation responses.
+                  </p>
+
                     <div class="call-to-action">
                       <p>
                         Learn more <a href="introduction">about the automation</a>, including what it does and who can use it. 
@@ -296,33 +309,37 @@
                       If the planning team already has one set up and you’d prefer to use that, you can skip this section and install the automation.
                     </p>
 
+                    <p>
+                      To create a new site:
+                    </p>
+
                     <ul>
-                      <li><a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fsupport.microsoft.com.mcas.ms%2Fen-gb%2Foffice%2Fsign-in-to-sharepoint-324a89ec-e77b-4475-b64a-13a0c14c45ec%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55" rel="noreferrer noopener" target="_blank">Sign in to Sharepoint (opens in new tab)</a>, then select <strong>Create site</strong> on the start page (Image 1)
+                      <li><a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fsupport.microsoft.com.mcas.ms%2Fen-gb%2Foffice%2Fsign-in-to-sharepoint-324a89ec-e77b-4475-b64a-13a0c14c45ec%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55" rel="noreferrer noopener" target="_blank">sign in to Sharepoint (opens in new tab)</a>, then select <strong>Create site</strong> on the start page (Image 1)
                       </li>
       
                       <li>
-                        Select <strong>Team site</strong> and then <strong>Standard team template</strong> 
+                        select <strong>Team site</strong> and then <strong>Standard team template</strong> 
                       </li>
                       <li>
-                        Select <strong>Use template</strong> on the preview page (Image 2)
-                      </li>
-                      
-                      <li>
-                        Give your site a name. For example, [Your LPA name] Local Plan Consultation responses 
-                      </li>
-                      <li>
-                        Add a description for your Sharepoint site
-                      </li>
-                      <li>
-                        Assign an owner (this can be you or anyone else who will have access to your site) (Image 3)
+                        select <strong>Use template</strong> on the preview page (Image 2)
                       </li>
                       
                       <li>
-                        If you see the below screen, set the privacy settings as <strong>Private - only members can access this site</strong>, then choose your language and timezone (Image 4)
+                        give your site a name. For example, [Your LPA name] Local Plan Consultation responses 
+                      </li>
+                      <li>
+                        add a description for your Sharepoint site
+                      </li>
+                      <li>
+                        assign an owner (this can be you or anyone else who will have access to your site) (Image 3)
+                      </li>
+                      
+                      <li>
+                        if you see the below screen, set the privacy settings as <strong>Private - only members can access this site</strong>, then choose your language and timezone (Image 4)
                       </li>
                      
                       <li>
-                        Add users to your site using their email addresses. Anyone you want to have access to the Consultation responses will need access to the Sharepoint site
+                        add users to your site using their email addresses. Anyone you want to have access to the Consultation responses will need access to the Sharepoint site
                       </li>
                     </ul>
 
@@ -346,28 +363,30 @@
                       This is a recommended step, but completely optional. If you’d rather not install a new PowerApp environment, you can skip ahead and <a href="install-the-automation">install the automation</a>.
                     </p>
 
+                    <p>To create a new environment:</p>
+
 
                     <ul>
                       <li>
-                        <a href="https://admin.powerplatform.microsoft.com/">Sign in to the Power Platform admin centre</a> – you must be a Dynamics 365 admin, Global admin, or Power Platform admin to set up a new environment (Image 1)
+                        <a href="https://admin.powerplatform.microsoft.com/">sign in to the Power Platform admin centre</a> – you must be a Dynamics 365 admin, Global admin, or Power Platform admin to set up a new environment (Image 1)
                       </li>
                       <li>
-                        In the navigation pane, select Environments, and then select New (Image 2)
+                        in the navigation pane, select <strong>Environments</strong>, and then select <strong>New</strong> (Image 2)
                       </li>
                       <li>
-                        On the next page, Give your environment a name (for example, [Your LPA name Consultation responses] and select your region as UK
+                        on the next page, give your environment a name (for example, [Your LPA name Consultation responses] and select your <strong>Region</strong> as <strong>UK</strong>
                       </li>
                       <ul>
                         <li>
-                          Select <strong>Production</strong> for <strong>Type</strong>
+                          select <strong>Production</strong> for <strong>Type</strong>
                         </li>
                         <li>
-                          Select <strong>No</strong> for <strong>Add a Dataverse data store</strong>
+                          select <strong>No</strong> for <strong>Add a Dataverse data store</strong>
                         </li>
                         <li>
-                          Select <strong>No</strong> for <strong>Pay-as-you-go with Azure</strong>
+                          select <strong>No</strong> for <strong>Pay-as-you-go with Azure</strong>
                         </li>
-                        <li>Then press <strong>Save</strong> to create your environment (Image 3)</li>
+                        <li>then press <strong>Save</strong> to create your environment (Image 3)</li>
                       </ul>
                     </ul>
 
@@ -379,27 +398,31 @@
 
                     <h2 id="install-the-automation">Install the automation</h2>
 
+                    <p>Getting the automation installed is broken into three steps. They should be done in the order as shown.</p>
+
                     <h3>1. Add the automation to PowerApps</h3>
+
+                    <p>
+                      First, you need to download the file and add it to PowerApps:
+                    </p>
                     <ul>
                       <li>
-                        <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fgithub.com.mcas.ms%2Fdigital-land%2Flocal-plans-consultations-email-automation%2Fraw%2Fmain%2FPlanningconsultationemailprocessing_1_0_0_13_managed.zip%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">Download this zip file</a> by following the link 
+                        <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fgithub.com.mcas.ms%2Fdigital-land%2Flocal-plans-consultations-email-automation%2Fraw%2Fmain%2FPlanningconsultationemailprocessing_1_0_0_13_managed.zip%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55">download this zip file</a> by following the link 
                       </li>
                       <li>
-                        Go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55"rel="noreferrer noopener" target="_blank">make.powerapps.com (opens in new tab)</a> in your browser and sign in (if prompted). If this is your first time using PowerApps, you may need to fill some contact information based on your preferences  
+                        go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55"rel="noreferrer noopener" target="_blank">make.powerapps.com (opens in new tab)</a> in your browser and sign in (if prompted). If this is your first time using PowerApps, you may need to fill some contact information based on your preferences  
                       </li>
                       <li>
-                        If you did not create a new environment, you can skip this step – but make sure “Personal productivity” is the environment selected in the dropdown at the top of your screen (Image 1) 
-                      </li>
-                      
-                      <li>
-                        Select <strong>Solutions</strong> from the left hand side menu, then <strong>Import Solution</strong> (Image 2)
-                      </li>
-                      
-                      <li>
-                        Select the Browse button and find the zip file in your downloads folder – select the whole zip file
+                        if you did not create a new environment, you can skip this step – but make sure “Personal productivity” is the environment selected in the dropdown at the top of your screen (Image 1) 
                       </li>
                       <li>
-                        Select <strong>Next</strong> to add the automation to Power Platforms 
+                        select <strong>Solutions</strong> from the left hand side menu, then <strong>Import Solution</strong> (Image 2)
+                      </li>
+                      <li>
+                        select the <strong>Browse</strong> button and find the zip file in your downloads folder – select the whole zip file
+                      </li>
+                      <li>
+                        select <strong>Next</strong> to add the automation to Power Platforms 
                       </li>
                     </ul>
 
@@ -407,21 +430,25 @@
 
                     <img src="/public/images/ms-365/add-automation-02.png" alt="User icon">
 
-                    <h3>2. Connect the automation to Sharepoint and your mailbox</h3>
+                    <h3>2. Connect the automation to your database</h3>
+
+                    <p>
+                      Once you've added the automation to PowerApps,you should connect it to your database:
+                    </p>
 
                     <ul>
                       <li>
-                        You may be prompted to update some settings – select <strong>Continue</strong>
+                        you may be prompted to update some settings – select <strong>Continue</strong>
                       </li>
                       <li>
-                        Before selecting Next, select the three dots beside <strong>Planning Consultation Mailbox</strong> and select <strong>Add new connection </strong> (Image 1)
+                        before selecting Next, select the three dots beside <strong>Planning Consultation Mailbox</strong> and select <strong>Add new connection </strong> (Image 1)
                       </li>
                       
                       <li>
-                        Select the account that has access to your shared mailbox. You’ll be prompted to sign in to this mailbox – you’ll need the password in order to do this  
+                        select the account that has access to your shared mailbox. You’ll be prompted to sign in to this mailbox – you’ll need the password in order to do this  
                       </li>
                       <li>
-                        Select <strong>Next</strong> to continue 
+                        select <strong>Next</strong> to continue 
                       </li>
                     </ul>
 
@@ -434,30 +461,30 @@
                     </p>
 
                     <p>
-                      The following steps may be in a slightly different order depending on your system.
+                      The following steps may be in a slightly different order depending on your system:
                     </p>
 
                     <ul>
                       <li>
-                        Add the URL of the Sharepoint site you created earlier to the <strong>Sharepoint site URL</strong> field. It should be in the format: <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example, <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong>.
+                        add the URL of the Sharepoint site you created earlier to the <strong>Sharepoint site URL</strong> field. It should be in the format: <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example, <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong>.
                       </li>
                       <li>
-                        If you’re using an existing site, add its URL in the format <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong> –  to the <strong>Sharepoint site URL</strong> field 
+                        if you’re using an existing site, add its URL in the format <strong>https://[orgname].sharepoint.com/sites/[site name]</strong> – for example <strong>https://repscouncil.sharepoint.com/sites/repsconsultation</strong> –  to the <strong>Sharepoint site URL</strong> field 
                       </li>
                       <li>
-                        Choose an appropriate list name (for example, [your LPA name] Consultation responses) and add it to the <strong>Sharepoint list name</strong> field. Your list name will be displayed on the left hand side navigation of your Sharepoint site once the automation is installed, so you can access it easily
+                        choose an appropriate list name (for example, [your LPA name] Consultation responses) and add it to the <strong>Sharepoint list name</strong> field. Your list name will be displayed on the left hand side navigation of your Sharepoint site once the automation is installed, so you can access it easily
                       </li>
                       <li>
-                        Choose which mailbox folder you’d like the automation to run from – this will usually be the Inbox, but if you’ve set up rules to automatically forward responses to a different folder, you can change it 
+                        choose which mailbox folder you’d like the automation to run from – this will usually be the Inbox, but if you’ve set up rules to automatically forward responses to a different folder, you can change it 
                       </li>
                       <li>
-                        You can also turn on automatic responses. These are pre-written automatic replies to emails sent to your consultation inbox. Responses are sent once a day in bulk. To turn these on, select <strong>Yes</strong> for <strong>Email Acknowledgement Required</strong> 
+                        you can also turn on automatic responses. These are pre-written automatic replies to emails sent to your consultation inbox. Responses are sent once a day in bulk. To turn these on, select <strong>Yes</strong> for <strong>Email Acknowledgement Required</strong> 
                       </li> 
                       <li>
-                        Enter the shared mailbox email address in the field <strong>Shared mailbox address</strong> (Image 1)
+                        enter the shared mailbox email address in the field <strong>Shared mailbox address</strong> (Image 1)
                       </li>
                       <li>
-                        Select <strong>Import</strong> and wait until the “Currently importing” message at the top of your screen turns into a green bar, which tells you the import has been successful (Image 2)
+                        select <strong>Import</strong> and wait until the “Currently importing” message at the top of your screen turns into a green bar, which tells you the import has been successful (Image 2)
                       </li>
                 
                     </ul>
@@ -474,15 +501,19 @@
                       Turn on and run the automation
                     </h2>
 
+                    <p>
+                      If everything is installed correctly, you should now be able to turn on the automation:
+                    </p>
+
                     <ul>
                       <li>
-                        Select your automation in Power Platforms, which will have the list name you specified during setup (Image 1)
+                        select your automation in Power Platforms, which will have the list name you specified during setup (Image 1)
                       </li>
                       <li>
-                        Select the <strong>Turn on</strong> button at the top of your screen – if the installation has been successful, this will turn into a <strong>Turn off</strong> button (Image 2)
+                        select the <strong>Turn on</strong> button at the top of your screen – if the installation has been successful, this will turn into a <strong>Turn off</strong> button (Image 2)
                       </li>
                       <li>
-                        When you’re no longer accepting responses to your consultation, make sure to turn off the automation by selecting the <strong>Turn off</strong> button.
+                        when you’re no longer accepting responses to your consultation, make sure to turn off the automation by selecting the <strong>Turn off</strong> button.
                       </li>
                     </ul>
 
@@ -495,15 +526,15 @@
                     </h3>
 
                     <p>
-                      To test the automation is working correctly, send an email, including an attachment, to the email address you attached it to.
+                      To test the automation is working correctly, send an email, including an attachment, to the email address you attached it to:
                     </p>
 
                     <ul>
                       <li>
-                        Go back to your automation in Power Platforms, and
+                        go back to your automation in Power Platforms, and
                       </li>
                       <li>
-                        Press the <strong>Run</strong> button at the top of the screen, and the <strong>Next</strong> button that will appear in the sidebar.
+                        press the <strong>Run</strong> button at the top of the screen, and the <strong>Next</strong> button that will appear in the sidebar.
                       </li>
                     </ul>
 
@@ -512,15 +543,15 @@
                     </p>
  
                     <p>
-                      You should be able to see the run history on your Power Platforms page. The run request you’ve just made will say <strong>“Running”</strong>. 
+                      You should be able to see the run history on your Power Platforms page. The run request you’ve just made will say <strong>“Running”</strong>:
                     </p>
                     
                     <ul>
                       <li>
-                        Use the Refresh icon if there is a delay between the run completing and the status automatically updating. 
+                        use the Refresh icon if there is a delay between the run completing and the status automatically updating. 
                       </li>
                       <li>
-                        Once the run request has completed, the status should say <strong>“Succeeded”</strong> (Image 1)
+                        once the run request has completed, the status should say <strong>“Succeeded”</strong> (Image 1)
                       </li>
                     </ul>
 
@@ -530,9 +561,9 @@
 
                     <ul>
                       <li>
-                        Select the Settings/gear icon
+                        select the Settings/gear icon
                       </li>
-                      <li>Select site contents</li>
+                      <li>select site contents</li>
                       <li>
                         select the list name you specified in the <strong>Sharepoint list name</strong> field during setup. You should see a table with the following columns: 
                       </li>
@@ -557,17 +588,34 @@
                       If you selected automatic responses, you should also receive an email acknowledgement back to your email address.
                     </p>
 
-                    <ul>
-                      <li>
-                        If the automation isn’t working, or the run request says <strong>“Failed”</strong> next to it, select the run request.
-                      </li>
-                    </ul>
+                    <p>
+                      If the automation isn’t working, or the run request says <strong>“Failed”</strong> next to it, select the run request.
+                    </p>
 
                     <p>
                       You’ll see a flow chart, which should have green ticks against every part of the flow that was successful. Finding the parts of the flow chart that were not successful should help you troubleshoot the issue. If you need further support, reach out to your IT team.
                     </p>
 
-                    <img src="/public/images/11-database.png" alt="User icon">
+                    <img src="/public/images/ms-365/11-database.png" alt="User icon">
+
+                    <h2 id="turn-the-automation-off">Turn the automation off</h2>
+
+                    <p>
+                      When you’re no longer accepting responses to your consultation, make sure to turn off the automation.
+                    </p>
+
+                    <p>
+                      To do this: 
+                    </p>
+
+                    <ul>
+                      <li>go to <a href="https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=http%3A%2F%2Fmake.powerapps.com.mcas.ms%3FMcasTsid%3D20892&McasCSRF=2a957f6bca51b4f9d31d69868820dc7ad5c96623c8a8ef39678cbdbfc2c5fe55"rel="noreferrer noopener" target="_blank">make.powerapps.com (opens in new tab)</a></li>
+                      <li>go to Solutions</li>
+                      <li>choose <strong>Managed</strong>, then select <strong>Planning consultation email processing</strong></li>
+                      <li>select the <strong>Turn off</strong> button – if this has been successful, it will turn into a <strong>Turn on</strong> button</li>
+                    </ul>
+
+                    <img src="/public/images/ms-365/12-uninstall.png" alt="User icon">
 
                     <h3>Using the automation for multiple consultations</h3>
 
