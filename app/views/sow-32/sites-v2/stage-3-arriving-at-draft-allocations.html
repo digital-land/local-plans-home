@@ -1,0 +1,602 @@
+{% extends "layouts/main.html" %} {% set pageName="pageName" %} {% block content %}
+
+<script src="/public/javascripts/contents-sticky.js"></script>
+<link rel="stylesheet" href="/public/css/contents.css" />
+
+<div class="govuk-grid-row draft">
+  <div class="govuk-grid-column-full">
+    <div
+      id="body"
+      class="gem-c-layout-for-public govuk-template__body js-enabled"
+    >
+      <div id="wrapper" class="direction-ltr govuk-width-container">
+        <div class="gem-c-contextual-breadcrumbs">
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="homeLinkClicked"
+                data-track-action="homeBreadcrumb"
+                data-track-label=""
+                data-track-options="{}"
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"1","index_total":"4"}'
+                class="govuk-breadcrumbs__link"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="breadcrumbClicked"
+                data-track-action="2"
+                data-track-label="/housing-local-and-community"
+                data-track-options='{"dimension28":"4","dimension29":"Housing, local and community"}'
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"2","index_total":"4"}'
+                class="govuk-breadcrumbs__link"
+                href="#"
+                >Housing, local and community</a
+              >
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="breadcrumbClicked"
+                data-track-action="3"
+                data-track-label="/housing-local-and-community/planning-and-building"
+                data-track-options='{"dimension28":"4","dimension29":"Planning and building"}'
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"3","index_total":"4"}'
+                class="govuk-breadcrumbs__link"
+                href="#"
+                >Planning and building</a
+              >
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="breadcrumbClicked"
+                data-track-action="4"
+                data-track-label="/housing-local-and-community/local-plans"
+                data-track-options='{"dimension28":"4","dimension29":"Local Plans"}'
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                class="govuk-breadcrumbs__link"
+                href="#"
+                >Local Plans</a
+              >
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a
+                data-track-category="breadcrumbClicked"
+                data-track-action="4"
+                data-track-label="/housing-local-and-community/local-plans"
+                data-track-options='{"dimension28":"4","dimension29":"Local Plans"}'
+                data-ga4-link='{"event_name":"navigation","type":"breadcrumb","index_link":"4","index_total":"4"}'
+                class="govuk-breadcrumbs__link"
+                href="#"
+                >About Local Plans</a
+              >
+            </li>
+          </ol>
+          </div>
+        </div>
+
+        <main role="main" id="content" class="detailed-guide" lang="en">
+          <span id="Top"></span>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div
+                class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8"
+              >
+                <span class="govuk-caption-xl gem-c-title__context">
+                  Guidance
+                </span>
+
+                <h1 class="gem-c-title__text govuk-heading-l">
+                  Arriving at draft allocations
+                </h1>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-two-thirds">
+              <p class="gem-c-lead-paragraph">
+                Understand how to take sites you’ve assessed in the previous stage and decide which should be allocated in your local plan.
+              </p>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="metadata-logo-wrapper">
+              <div class="govuk-grid-column-two-thirds metadata-column">
+                <div
+                  class="gem-c-metadata"
+                  data-module="gem-toggle metadata"
+                  data-gem-toggle-module-started="true"
+                  data-metadata-module-started="true"
+                >
+                  <dl
+                    class="gem-c-metadata__list"
+                    data-module="gem-track-click"
+                    data-gem-track-click-module-started="true"
+                  >
+                    <dt class="gem-c-metadata__term">From:</dt>
+                    <dd class="gem-c-metadata__definition">
+                      <a
+                        class="govuk-link"
+                        href="#"
+                        >Ministry of Housing,
+Communities &
+Local Government
+                      </a>
+                    </dd>
+                    <dt class="gem-c-metadata__term">Published</dt>
+                    <dd class="gem-c-metadata__definition">23 August 2013</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-third"></div>
+            </div>
+          </div>
+
+          <div
+            data-module="gem-track-click ga4-link-tracker"
+            class="govuk-!-display-none-print govuk-!-margin-bottom-6"
+            data-gem-track-click-module-started="true"
+            data-ga4-link-tracker-module-started="true"
+          >
+            <form
+              class="gem-c-single-page-notification-button"
+              action="/email/subscriptions/single-page/new"
+              method="POST"
+              data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+              data-track-action="Subscribe-button-top"
+              data-track-category="Single-page-notification-button"
+              data-button-location="top"
+              data-button-text-subscribe="Get emails about this page"
+              data-button-text-unsubscribe="Stop getting emails about this page"
+            >
+              <input
+                type="hidden"
+                name="base_path"
+                value="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+              />
+              <button
+                class="govuk-body-s gem-c-single-page-notification-button__submit"
+                type="submit"
+                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"/email/subscriptions/single-page/new"}'
+              >
+                <svg
+                  class="gem-c-single-page-notification-button__icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18"
+                  width="18"
+                  viewBox="0 0 459.334 459.334"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"
+                  ></path></svg
+                ><span class="gem-c-single-page-notication-button__text"
+                  >Get emails about this page</span
+                >
+              </button>
+            </form>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div
+                id="contents"
+                class="app-c-contents-list-with-body"
+                data-module="sticky-element-container"
+                data-sticky-element-container-module-started="true"
+              >
+                <div class="responsive-bottom-margin">
+                  <nav
+                    data-module="gem-track-click ga4-link-tracker"
+                    aria-label="Contents"
+                    class="gem-c-contents-list"
+                    role="navigation"
+                    data-gem-track-click-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <h2 class="gem-c-contents-list__title">Contents</h2>
+                    <ol class="gem-c-contents-list__list">
+                      <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                        <span aria-hidden="true"></span>
+                        <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#engaging-your-stakeholders">Engaging your stakeholders</a>
+                      </li>
+                      <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                        <span aria-hidden="true"></span>
+                        <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#developing-your-selection-approach">Developing your selection approach</a>
+                      </li>
+                      <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                        <span aria-hidden="true"></span>
+                        <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#making-sure-sites-are-deliverable-and-developable">Making sure sites are deliverable and developable</a>
+                      </li>
+                      <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                        <span aria-hidden="true"></span>
+                        <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#next-steps">Next steps</a>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+
+                <div
+                  class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-0 govuk-!-margin-bottom-6"
+                >
+                  <button
+                    class="govuk-link govuk-body-s gem-c-print-link__button"
+                    data-module="print-link"
+                    data-print-link-module-started="true"
+                  >
+                    Print this page
+                  </button>
+                </div>
+
+                <div
+                  class="gem-c-govspeak govuk-govspeak"
+                  data-module="govspeak ga4-link-tracker"
+                  data-ga4-track-links-only=""
+                  data-ga4-limit-to-element-class="call-to-action, info-notice, help-notice, advisory"
+                  data-ga4-link='{"event_name":"navigation","type":"callout"}'
+                  data-govspeak-module-started="true"
+                  data-ga4-link-tracker-module-started="true"
+                >
+                  <div class="govspeak">
+
+                    <p>Drafting allocated sites follows a similar process to Stage 2, but considering different things. It uses many of the same methodologies but requires more of your planning judgement. It’s also an opportunity to reflect on your local context, strategy and vision. This stage is classed as ‘policy on’.</p>
+
+                    <p>
+                      Preparing draft site allocations will be an iterative process. It’s likely you’ll go through different stages multiple times, particularly following consultation and engagement with stakeholders. You'll refine your draft allocations as you do so.     
+                    </p>
+
+                    <div class="call-to-action">
+                      <p>
+                        Learn more about Stage 1: Identifying Sites, or Stage 2: Categorising and assessing sites
+                      </p>
+                    </div>
+
+                    <h3>
+                      Aim of this section
+                    </h3>
+
+                    <ul>
+                      <li>understand how to apply your scoring methodology from Stage 2</li>
+                      <li>decide how best to engage stakeholders on progress</li>
+                      <li>learn what to factor into your selection approach </li>
+                    </ul>
+
+                    <h3>
+                      Outputs of this section
+                    </h3>
+
+                    <p>
+                      a list of draft site allocations ready to be refined ahead of examination
+                    </p>
+                    
+                    <h2 id="engaging-your-stakeholders">
+                      Engaging your stakeholders
+                    </h2>
+                    
+                    <p>
+                      As with all stages, you should consult your stakeholders on your decisions while drafting your allocations.  
+                    </p>
+
+                    <p>
+                      This is alongside the mandatory consultations throughout the plan making process, as well as opportunities for less formal engagement. This will help you arrive at the most appropriate draft site allocations. 
+                    </p>
+
+                    <p>
+                      Wherever you take opportunities for engagement, with time to consider and where appropriate, you should respond to representations made or views shared on sites.  
+                    </p>
+
+                    <p>
+                      You can use similar channels to keep them informed as you used for publicising a call for sites. 
+                    </p>
+
+                    <p>This includes:</p>
+
+                    <ul>
+                      <li>the local authority website </li>
+                      <li>local bulletins, for example, in local authority buildings </li>
+                      <li>public meetings </li>
+                      <li>direct emails to interested people </li>
+                      <li>media channels </li>
+                      <li>item</li>
+                    </ul>
+
+                    <p>
+                      By this stage in the process, you’re likely to have established channels of dialogue with key stakeholders. You should use these to share information as and when it’s appropriate.  
+                    </p>
+
+                    <p>
+                      For example, this could be in a regular public meeting or posting progress updates on your website. The most important thing is that you share decisions regularly and often.
+                    </p>
+
+                    <h2 id="developing-your-selection-approach≈">
+                      Developing your selection approach
+                    </h2>
+
+                    <p>
+                      Your approach will depend on several factors which will be unique to your objectives. These include environmental, economic and social objectives.  
+                    </p>
+
+                    <p>
+                      You are best placed to make judgements based on these factors. The context of your plan area and local vision is most important when reaching decisions.  
+                    </p>
+
+                    <p>
+                      Here are some example factors you could consider (this list is not exhaustive): 
+                    </p>
+
+                    <ul>
+                      <li>
+                        type of site - for example, greenfield or brownfield
+                      </li>
+                      <li>
+                        physical site characteristics, such as contamination and instability  
+                      </li>
+                      <li>
+                        agricultural land quality  
+                      </li>
+                      <li>
+                        settlement hierarchy and function (linking to related evidence and the plan vision and spatial strategy)
+                      </li>
+                      <li>
+                        proximity to the settlements
+                      </li>
+                      <li>
+                        connectivity by private, public and active transport
+                      </li>
+                      <li>
+                        accessibility to services
+                      </li>
+                      <li>
+                        open space
+                      </li>
+                      <li>
+                        efficient use of land
+                      </li>
+                      <li>
+                        alternative or competing uses such as employment uses, minerals extraction or safeguarded land
+                      </li>
+                      <li>
+                        ability to deliver strategic development, either alone or combined with other sites (linking to the plan vision and spatial strategy)
+                      </li>
+                      <li>
+                        green belt status and its performance against the five purposes of the green belt (linking to a green belt review)
+                      </li>
+                      <li>
+                        public safety zones
+                      </li>
+                      <li>
+                        environmental considerations such as:  
+                      </li>
+                      <ul>
+                        <li>air quality </li>
+                        <li>biodiversity</li>
+                        <li>flood risk (linking to a strategic flood risk assessment and the sequential test)</li>
+                        <li>landscape, townscape and character (linking to related evidence and the plan vision)</li>
+                        <li>health and wellbeing</li>
+                        <li>archaeology and cultural heritage</li>
+                        <li>resource use and waste</li>
+                        <li>water quality and use</li>
+                      </ul>
+                      <li>
+                        sustainability considerations such as:
+                      </li>
+                      <ul>
+                        <li>economy and skills </li>
+                        <li>regeneration and social inclusion </li>
+                      </ul>
+                      <li>
+                        local considerations, such as constraints relating to neighbouring or nearby uses (such as airport safety zones) or existing or emerging policy designations (such as strategic gaps or countryside protection policies)
+                      </li>
+                    </ul>
+
+                    <h2 id="making-sure-sites-are-deliverable-and-developable">
+                      Making sure sites are deliverable and developable
+                    </h2>
+
+                    <p>
+                      You will have checked each site's availability and achievability during the previous stage of the process.
+                    </p>
+
+                    <p>
+                      This phase builds on that work and allows you to make sure nothing has changed. You also have the chance to build confidence through repeated, more assessment iterations.  
+                    </p>
+
+                    <p>
+                      These iterations will give you a clearer picture of the most appropriate sites. It will also allow you to refine your criteria to do a more detailed assessment where needed.
+                    </p>
+
+                    <p>
+                      For a more detailed assessment, you should consider:
+                    </p>
+
+                    <ul>
+                      <li>
+                        who owns the land and how willing they are to see the site developed 
+                      </li>
+                      <li>
+                        access to the road network
+                      </li>
+                      <li>
+                        key infrastructure requirements and capacity (linking to your infrastructure delivery strategy)
+                      </li>
+                      <li>
+                        barriers to delivery, including existing uses and site characteristics
+                      </li>
+                      <li>
+                        lead times, delivery rates and market capacity
+                      </li>
+                    </ul>
+                    
+                    <p>
+                      This includes considering the capacity, type and development mix of your current sites.
+                    </p>
+
+                    <p>
+                      You should also draw on your whole plan’s viability study. It will give you a complete picture of how each site meets your needs.
+                    </p>
+
+                    <h3>
+                      If you do not have enough sites
+                    </h3>
+
+                    <p>
+                      The number of sites you allocate depends on your spatial strategy. There are several things to reconsider if, after several iterations, you do not have enough. 
+                    </p>
+
+                    <p>
+                      This includes: 
+                    </p>
+
+                    <ul>
+                      <li>how you selected sites - are there any more that are appropriate and available?</li>
+                      <li>how you assessed sites - could you change the mitigation criteria and local considerations used?</li>
+                      <li>the assumptions you made around density and development potential - are they right? </li>
+                      <li>the reasonable alternatives in your spatial strategy - could you change them?</li>
+                    </ul>
+
+                    <p>
+                      If you still do not have the appropriate number of sites, you need to explain why in your justification. This will form part of your examination criteria and will directly affect whether your plan is considered sound.
+                    </p>
+
+                    <p>
+                      You may find that you have more suitable sites than you need, to meet your development needs. These sites may also be similar in terms of their deliverability, developability etc. In this case, it's important to outline this challenge when you’re reporting on your decisions. It's fine to choose between similar sites using your planning judgement. Make sure to clearly state why you have chosen them over similar sites.
+                    </p>
+
+                    <p>
+                      You can find more detail on all these approaches in the previous guidance stages. 
+                    </p>
+                    
+                    <h2 id="next-steps">
+                      Next steps
+                    </h2>
+
+                    <p>
+                      Once you’ve finished allocation, you can move forward to Choosing sites for examination. 
+                    </p>
+              
+                  </div>
+                </div>
+
+                <div
+                  class="app-c-published-dates govuk-!-margin-bottom-5"
+                  lang="en"
+                >
+                  Published 23 August 2013
+                </div>
+
+                <div class="published-dates-button-group">
+                  <div
+                    data-module="gem-track-click ga4-link-tracker"
+                    class="govuk-!-display-none-print govuk-!-margin-bottom-3"
+                    data-gem-track-click-module-started="true"
+                    data-ga4-link-tracker-module-started="true"
+                  >
+                    <form
+                      class="gem-c-single-page-notification-button"
+                      action="/email/subscriptions/single-page/new"
+                      method="POST"
+                      data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+                      data-track-action="Subscribe-button-bottom"
+                      data-track-category="Single-page-notification-button"
+                      data-button-location="bottom"
+                      data-button-text-subscribe="Get emails about this page"
+                      data-button-text-unsubscribe="Stop getting emails about this page"
+                    >
+                      <input
+                        type="hidden"
+                        name="base_path"
+                        value="/guidance/what-to-consider-when-engaging-on-your-local-plan"
+                      />
+                      <button
+                        class="govuk-body-s gem-c-single-page-notification-button__submit"
+                        type="submit"
+                        data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":2,"index_total":2,"section":"Footer","url":"/email/subscriptions/single-page/new"}'
+                      >
+                        <svg
+                          class="gem-c-single-page-notification-button__icon"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="18"
+                          width="18"
+                          viewBox="0 0 459.334 459.334"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M177.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"
+                          ></path></svg
+                        ><span class="gem-c-single-page-notication-button__text"
+                          >Get emails about this page</span
+                        >
+                      </button>
+                    </form>
+                  </div>
+
+                  <div
+                    class="gem-c-print-link govuk-!-display-none-print govuk-!-margin-top-0 govuk-!-margin-bottom-8"
+                  >
+                    <button
+                      class="govuk-link govuk-body-s gem-c-print-link__button"
+                      data-module="print-link"
+                      data-print-link-module-started="true"
+                    >
+                      Print this page
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  data-sticky-element=""
+                  class="app-c-contents-list-with-body__link-wrapper sticky-element--hidden sticky-element--stuck-to-window sticky-element--enabled"
+                >
+                  <div class="app-c-contents-list-with-body__link-container">
+                    <a
+                      class="govuk-link app-c-back-to-top dont-print"
+                      href="#contents"
+                    >
+                      <svg
+                        class="app-c-back-to-top__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="17"
+                        viewBox="0 0 13 17"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"
+                        ></path>
+                      </svg>
+                      Contents
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <div class="gem-c-contextual-sidebar"></div>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="gem-c-contextual-footer"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
