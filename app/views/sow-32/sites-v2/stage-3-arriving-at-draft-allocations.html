@@ -148,7 +148,7 @@ Local Government
           >
             <form
               class="gem-c-single-page-notification-button"
-              action="/email/subscriptions/single-page/new"
+              action="#"
               method="POST"
               data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
               data-track-action="Subscribe-button-top"
@@ -165,7 +165,7 @@ Local Government
               <button
                 class="govuk-body-s gem-c-single-page-notification-button__submit"
                 type="submit"
-                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"/email/subscriptions/single-page/new"}'
+                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"#"}'
               >
                 <svg
                   class="gem-c-single-page-notification-button__icon"
@@ -205,6 +205,10 @@ Local Government
                   >
                     <h2 class="gem-c-contents-list__title">Contents</h2>
                     <ol class="gem-c-contents-list__list">
+                      <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
+                        <span aria-hidden="true"></span>
+                        <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#prioritising-your-planning-judgement">Prioritising your planning judgement</a>
+                      </li>
                       <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed">
                         <span aria-hidden="true"></span>
                         <a class="gem-c-contents-list__link govuk-link govuk-link--no-underline" href="#engaging-your-stakeholders">Engaging your stakeholders</a>
@@ -272,9 +276,40 @@ Local Government
                       Outputs of this section
                     </h3>
 
+                    <ul>
+                      <li>a list of draft site allocations ready to be refined ahead of examination</li>
+                    </ul>
+
+                    <h2 id="prioritising-your-planning-judgement">
+                      Prioritising your planning judgement
+                    </h2>
+
                     <p>
-                      a list of draft site allocations ready to be refined ahead of examination
+                      To arrive at draft site allocations, you should: 
                     </p>
+
+                    <ul>
+                      <li>use the same red, amber, green (RAG) scoring methodology as outlined in Stage 2</li>
+                      <li>apply the same methodology to make sure they are deliverable and developable</li>
+                      <li>take the same approach if you have too many or too few sites</li>
+                    </ul>
+
+                    <p>
+                      Your local context will be key to making decisions and is the most important element of drafting allocations. 
+                    </p>
+
+                    <p>
+                      This will include the needs of your area, your vision for the plan and spatial strategy. While you’ll use familiar frameworks, these considerations should be your guide. The approach you take to site selection should also be consistent with existing national policy. 
+                    </p>
+
+                    <p>
+                      You should iterate on your allocations. For example, where you need to consider reasonable alternatives for environmental constraints, iterating will demonstrate you have considered the mitigation hierarchy.
+                    </p>
+
+                    <p>
+                      It will also give you confidence in the sites you ultimately allocate and help to show if you may have too many or few sites.
+                    </p>
+
                     
                     <h2 id="engaging-your-stakeholders">
                       Engaging your stakeholders
@@ -466,7 +501,11 @@ Local Government
                     </p>
 
                     <p>
-                      You may find that you have more suitable sites than you need, to meet your development needs. These sites may also be similar in terms of their deliverability, developability etc. In this case, it's important to outline this challenge when you’re reporting on your decisions. It's fine to choose between similar sites using your planning judgement. Make sure to clearly state why you have chosen them over similar sites.
+                      You may find that you have more suitable sites than you need, to meet your development needs. These sites may also be similar in terms of their deliverability, developability etc. In this case, it's important to outline this challenge when you’re reporting on your decisions.
+                    </p>
+
+                    <p>
+                      It's fine to choose between similar sites using your planning judgement. Make sure to clearly state why you have chosen them over similar sites.
                     </p>
 
                     <p>
@@ -500,7 +539,7 @@ Local Government
                   >
                     <form
                       class="gem-c-single-page-notification-button"
-                      action="/email/subscriptions/single-page/new"
+                      action="#"
                       method="POST"
                       data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
                       data-track-action="Subscribe-button-bottom"
@@ -512,12 +551,11 @@ Local Government
                       <input
                         type="hidden"
                         name="base_path"
-                        value="/guidance/what-to-consider-when-engaging-on-your-local-plan"
                       />
                       <button
                         class="govuk-body-s gem-c-single-page-notification-button__submit"
                         type="submit"
-                        data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":2,"index_total":2,"section":"Footer","url":"/email/subscriptions/single-page/new"}'
+                        data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":2,"index_total":2,"section":"Footer","url":"#"}'
                       >
                         <svg
                           class="gem-c-single-page-notification-button__icon"
