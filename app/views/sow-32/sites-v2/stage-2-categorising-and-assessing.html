@@ -156,7 +156,7 @@
               <button
                 class="govuk-body-s gem-c-single-page-notification-button__submit"
                 type="submit"
-                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"/email/subscriptions/single-page/new"}'
+                data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":1,"index_total":2,"section":"Top","url":"#"}'
               >
                 <svg
                   class="gem-c-single-page-notification-button__icon"
@@ -194,6 +194,15 @@
                   >
                     <h2 class="gem-c-contents-list__title">Contents</h2>
                     <ol class="gem-c-contents-list__list">
+                      <li
+                        class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
+                      >
+                        <span aria-hidden="true"></span>
+                        <a
+                          class="gem-c-contents-list__link govuk-link govuk-link--no-underline"
+                          href="#how-to-categorise-sites"
+                          >How to categorise sites</a>
+                      </li>
                       <li
                         class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"
                       >
@@ -266,6 +275,36 @@
                           Learn more about <a href="stage-1-identifying-sites">Stage 1: Identifying Sites</a>, or <a href="stage-3-arriving-at-draft-allocations">Stage 3: Arriving at draft site allocations</a>
                       </p>
                     </div>
+
+                    <h2 id="how-to-categorise-sites">
+                      How to categorise sites
+                    </h2>
+
+                    <p>
+                      You should categorise sites by the proposed type and scale of development.
+                    </p>
+
+                    <p>
+                      The three main categories you should categorise into are: 
+                    </p>
+
+                    <ul>
+                      <li>Greenfield-led housing sites</li>
+                      <li>Brownfield-led housing sites</li>
+                      <li>Employment-led sites</li>
+                    </ul>
+
+                    <p>
+                      You should also consider traveller sites as part of your duty to all groups with protected characteristics.
+                    </p>
+
+                    <p>
+                      As will all other stages, you’re encouraged to use your own judgement on categorisation when making decisions. You will have to explain your rationale during the examination process. 
+                    </p>
+
+                    <p>
+                      Ask these questions to help you categorise:
+                    </p>
 
                     <h3>
                       Aim of this section
@@ -628,7 +667,7 @@
                   >
                     <form
                       class="gem-c-single-page-notification-button"
-                      action="/email/subscriptions/single-page/new"
+                      action="#"
                       method="POST"
                       data-track-label="/guidance/what-to-consider-when-engaging-on-your-local-plan"
                       data-track-action="Subscribe-button-bottom"
@@ -640,12 +679,11 @@
                       <input
                         type="hidden"
                         name="base_path"
-                        value="/guidance/what-to-consider-when-engaging-on-your-local-plan"
                       />
                       <button
                         class="govuk-body-s gem-c-single-page-notification-button__submit"
                         type="submit"
-                        data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":2,"index_total":2,"section":"Footer","url":"/email/subscriptions/single-page/new"}'
+                        data-ga4-link='{"event_name":"navigation","type":"subscribe","index_link":2,"index_total":2,"section":"Footer","url":"#"}'
                       >
                         <svg
                           class="gem-c-single-page-notification-button__icon"
