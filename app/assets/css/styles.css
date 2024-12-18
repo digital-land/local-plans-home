@@ -3564,7 +3564,7 @@
 
 .govspeak blockquote p::before,
 .gem-c-govspeak blockquote p::before {
-  content: "â€œ";
+  content: "“";
   float: left;
   clear: both;
   margin-left: -15px;
@@ -3572,7 +3572,7 @@
 
 .govspeak blockquote p:last-child::after,
 .gem-c-govspeak blockquote p:last-child::after {
-  content: "â€";
+  content: "”";
 }
 
 .govspeak.direction-rtl blockquote,
